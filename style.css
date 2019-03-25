@@ -43,7 +43,7 @@
   
   .description {
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 10vw;
     margin-left: 65px;
     margin-top: -40px;
     margin-bottom: 120px;
@@ -52,14 +52,14 @@
   .email {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 15vw;
     margin-left: 60px;
     margin-top: 160px;
     color: #004c01;
   }
   
   .verb h1 span {
-    font-size: 80px;
+    font-size: 8vw;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter; 
@@ -67,7 +67,7 @@
   }
   
   .verb h1 span:hover {
-    font-size: 80px;
+    font-size: 8vw;
     letter-spacing: 110px;
     color: #00ad02;
     margin-left: 160px;
