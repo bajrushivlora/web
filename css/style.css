@@ -1,28 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  margin: 0;
-  padding: 0;
+:root {
+  --main-font: "Poppins", sans-serif;
+  --white: #e2e2e2;
 }
 
 body {
   margin: 0;
   padding: 0;
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   background-color: black;
-}
-
-.content {
-  height: 100%;
-  width: 100%;
-}
-
-:root {
-  --main-font: "Poppins", sans-serif;
-  --white: #e2e2e2;
 }
 
 /*# sourceMappingURL=style.css.map */
