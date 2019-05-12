@@ -1,0 +1,15 @@
+.name {
+    position: relative; 
+
+    &_name {
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        font-size: 60px;
+        position: relative;
+        padding-right: 25px;
+        margin: 0;
+        text-align: right;
+        letter-spacing: -2px;
+        color: #3d437a;
+    }
+}

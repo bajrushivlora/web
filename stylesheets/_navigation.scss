@@ -1,0 +1,32 @@
+.header {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    &_one {
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+        position: relative;
+        padding-right: 10px;
+        top: 80px;
+        float: right;
+        margin: 0;
+        text-align: right;
+        color: #232747;
+    }
+
+    &_one:hover {
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        font-size: 33px;
+        position: relative;
+        top: 80px;
+        padding-right: 10px;
+        float: right;
+        margin: 0;
+        text-align: right;
+        color: #232747;
+    }
+}
+  
