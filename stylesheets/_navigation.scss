@@ -10,6 +10,7 @@
         color: transparent;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--pink);
+        text-decoration: none;
     }
 
     &_two {
@@ -21,6 +22,7 @@
         color: transparent;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--pink);
+        text-decoration: none;
     }
 
     &_three {
@@ -32,11 +34,13 @@
         color: transparent;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--pink);
+        text-decoration: none;
     }
     
     &_one:hover, &_two:hover, &_three:hover {
         content: '';
         -webkit-text-stroke-color: var(--white);
+        text-decoration: none;
     }
 }
   

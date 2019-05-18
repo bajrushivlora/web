@@ -57,6 +57,7 @@ body {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--pink);
+  text-decoration: none;
 }
 .header_two {
   position: relative;
@@ -67,6 +68,7 @@ body {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--pink);
+  text-decoration: none;
 }
 .header_three {
   position: relative;
@@ -77,10 +79,12 @@ body {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--pink);
+  text-decoration: none;
 }
 .header_one:hover, .header_two:hover, .header_three:hover {
   content: "";
   -webkit-text-stroke-color: var(--white);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
