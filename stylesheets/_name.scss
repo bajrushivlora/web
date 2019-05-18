@@ -1,23 +1,24 @@
+.vloracontainer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
+    display: inline;
+    margin-left: 30px;
 }
 
 .vlora {
     position: relative;
-    margin-top: 20px;
-    width: 40%;
-    height: 40%;
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 800;
+    margin: 0;
+    font-size: 90px;
+    letter-spacing: 30px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--pink);
 }
-
-// &_name {
-//     font-family: 'Raleway', sans-serif;
-//     font-weight: 800;
-//     font-size: 90px;
-//     position: relative;
-//     padding-right: 25px;
-//     margin: 0;
-//     text-align: right;
-//     color: var(--pink);
-// }

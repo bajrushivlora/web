@@ -1,5 +1,5 @@
 :root {
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Raleway", sans-serif;
   --white: #e2e2e2;
   --black: #000000;
   --pink: #b059a2;
@@ -20,47 +20,67 @@ body {
   background-color: black;
 }
 
+.vloracontainer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
 .container {
-  position: relative;
-  display: flex;
-  justify-content: center;
+  display: inline;
+  margin-left: 30px;
 }
 
 .vlora {
   position: relative;
-  margin-top: 20px;
-  width: 40%;
-  height: 40%;
+  display: inline-block;
+  font-family: var(--main-font);
+  font-weight: 800;
+  margin: 0;
+  font-size: 90px;
+  letter-spacing: 30px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--pink);
 }
 
 .header {
   position: relative;
-  top: 0;
-  right: 0;
 }
 .header_one {
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
+  position: relative;
+  font-family: var(--main-font);
+  font-weight: 900;
+  margin: 0px;
   font-size: 30px;
-  position: relative;
-  padding-right: 10px;
-  top: 80px;
-  float: right;
-  margin: 0;
-  text-align: right;
-  color: #232747;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--pink);
 }
-.header_one:hover {
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  font-size: 33px;
+.header_two {
   position: relative;
-  top: 80px;
-  padding-right: 10px;
-  float: right;
-  margin: 0;
-  text-align: right;
-  color: #232747;
+  margin: 0px;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--pink);
+}
+.header_three {
+  position: relative;
+  margin: 0px;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--pink);
+}
+.header_one:hover, .header_two:hover, .header_three:hover {
+  content: "";
+  -webkit-text-stroke-color: var(--white);
 }
 
 /*# sourceMappingURL=style.css.map */
