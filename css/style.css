@@ -90,12 +90,21 @@ body {
   text-decoration: none;
 }
 
+.containerthree {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
 .contact {
   position: relative;
   display: inline-block;
   font-family: var(--main-font);
   font-weight: 800;
   margin: 0;
+  top: 0;
+  left: 20px;
   font-size: 130px;
   color: transparent;
   -webkit-text-stroke-width: 3px;
@@ -115,6 +124,8 @@ body {
   font-family: var(--main-font);
   font-weight: 800;
   margin: 0;
+  top: 0;
+  left: 20px;
   font-size: 130px;
   color: transparent;
   -webkit-text-stroke-width: 3px;
