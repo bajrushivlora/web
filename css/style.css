@@ -99,7 +99,7 @@ body {
   font-size: 130px;
   color: transparent;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--pink);
+  -webkit-text-stroke-color: var(--green);
 }
 
 .containertwo {
@@ -118,7 +118,7 @@ body {
   font-size: 130px;
   color: transparent;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--pink);
+  -webkit-text-stroke-color: var(--blue);
 }
 
 .me {
@@ -129,6 +129,25 @@ body {
 .me_pic {
   width: 100%;
   height: 100%;
+}
+
+.containerone {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.design {
+  position: relative;
+  display: inline-block;
+  font-family: var(--main-font);
+  font-weight: 800;
+  margin: 0;
+  font-size: 130px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--blue);
 }
 
 /*# sourceMappingURL=style.css.map */

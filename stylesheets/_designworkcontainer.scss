@@ -1,4 +1,11 @@
-.contact {
+.containerone {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.design {
     position: relative;
     display: inline-block;
     font-family: var(--main-font);
@@ -7,5 +14,6 @@
     font-size: 130px;
     color: transparent;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--green);
+    -webkit-text-stroke-color: var(--blue);
 }
+
