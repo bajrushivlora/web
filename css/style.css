@@ -165,10 +165,9 @@ body {
 
 .bottom {
   position: absolute;
+  display: inline;
   bottom: 0;
-  width: 100%;
   text-align: center;
-  display: inline-block;
   margin-left: 10px;
 }
 
