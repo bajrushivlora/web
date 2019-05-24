@@ -163,4 +163,19 @@ body {
   -webkit-text-stroke-color: var(--yellow);
 }
 
+.bottom {
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+}
+
+.myname {
+  font-family: var(--main-font);
+  font-size: 30px;
+  letter-spacing: 30px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--pink);
+}
+
 /*# sourceMappingURL=style.css.map */
