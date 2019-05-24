@@ -164,17 +164,19 @@ body {
 }
 
 .bottom {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  text-align: center;
   display: inline-block;
 }
 
 .myname {
   font-family: var(--main-font);
-  font-size: 30px;
-  letter-spacing: 30px;
+  font-size: 33px;
+  letter-spacing: 10px;
   color: transparent;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 1.4px;
   -webkit-text-stroke-color: var(--pink);
 }
 
