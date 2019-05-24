@@ -1,0 +1,29 @@
+.containertwo {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.biography {
+    position: relative;
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 800;
+    margin: 0;
+    font-size: 130px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--pink);
+}
+
+.me {
+    width: 500px;
+    height: 450px;
+    float: right;
+
+    &_pic {
+        width: 100%;
+        height: 100%;
+    }
+}
