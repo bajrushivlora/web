@@ -151,7 +151,6 @@ body {
 
 .bottom {
   display: inline;
-  margin-left: 10px;
 }
 
 .myname {
@@ -161,9 +160,8 @@ body {
   font-family: var(--main-font);
   font-size: 30px;
   font-weight: 800;
-  letter-spacing: 10px;
   color: transparent;
-  -webkit-text-stroke-width: 1.4px;
+  -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: var(--pink);
 }
 
