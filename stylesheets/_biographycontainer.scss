@@ -29,3 +29,34 @@
         height: 100%;
     }
 }
+
+.bottomcontainer {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.bottom {
+    display: inline;
+    margin-left: 10px;
+}
+
+.myname {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    color: transparent;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-stroke-color: var(--pink);
+}
+
+.myname:hover {
+    content: '';
+    text-decoration: none;
+    -webkit-text-stroke-color: var(--white);
+}
