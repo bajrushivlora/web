@@ -1,3 +1,3 @@
-document.querySelector('a').addEventListener('mouseover', function() {
-    document.querySelector('a').style.display = 'none';
+document.querySelector('.myname').addEventListener('mouseover', function() {
+    document.querySelector('.myname').style.display = 'none';
 });
