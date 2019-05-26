@@ -23,14 +23,14 @@
 .textcontainer {
     position: relative;
     float: left;
-    width: 600px;
+    width: 550px;
     margin: 130px 50px 50px 30px;
 
     &_text {
         font-family: var(--main-font);
         margin: 0;
         font-size: 40px;
-        color: #c7d4d8;
+        color: var(--lightblue);
         font-weight: 900;
         line-height: 44px;
     }
