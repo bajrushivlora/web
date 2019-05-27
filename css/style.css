@@ -162,16 +162,12 @@ body {
   text-decoration: none;
 }
 
-.linkedin:hover {
-  content: "";
-  text-decoration: none;
-}
-
 .bottomcontainer {
   bottom: 0px;
   text-align: center;
   width: 100%;
   height: 35px;
+  margin-bottom: 35px;
 }
 
 .bottom {
