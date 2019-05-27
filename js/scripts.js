@@ -10,6 +10,7 @@ function hover () {
     x.style.backgroundColor = "#fffc70";
     x.style.borderColor = "#fffc70";
     y.style.color = "#000000";
+    x.style.transition = "opacity 1s";
 }
 
 function hoverOut () {

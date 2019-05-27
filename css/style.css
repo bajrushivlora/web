@@ -6,7 +6,7 @@
   --blue: #72e5ff;
   --yellow: #fffc70;
   --green: #80ef7a;
-  --lightblue: #c7d4d8;
+  --lightblue: #a8eeff;
 }
 
 html {
@@ -219,16 +219,16 @@ body {
   position: relative;
   display: inline-block;
   width: 575px;
-  margin: 120px 0px 70px 110px;
+  margin: 120px 0px 70px 150px;
 }
 .textcontainer_text {
   font-family: var(--main-font);
   margin: 0;
-  font-size: 30px;
-  color: var(--lightblue);
+  font-size: 33px;
+  color: var(--blue);
   font-weight: 900;
   padding: 70px;
-  border: 2px solid var(--lightblue);
+  border: 3px solid var(--white);
 }
 
 .me {
@@ -242,6 +242,14 @@ body {
 .me_pic {
   width: 100%;
   height: 100%;
+}
+.me_vlora {
+  font-family: var(--main-font);
+  font-size: 30px;
+  color: var(--blue);
+  font-weight: 800;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .bottomcontainer {
@@ -288,10 +296,40 @@ body {
   margin: 0;
   top: 0;
   left: 20px;
-  font-size: 130px;
+  font-size: 210px;
   color: transparent;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--yellow);
+  -webkit-text-stroke-color: var(--green);
+  line-height: 210px;
+}
+
+.bottomcontainer {
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+}
+
+.bottom {
+  display: inline;
+}
+
+.myname {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: var(--pink);
+}
+
+.myname:hover {
+  content: "";
+  text-decoration: none;
+  -webkit-text-stroke-color: var(--white);
 }
 
 /*# sourceMappingURL=style.css.map */

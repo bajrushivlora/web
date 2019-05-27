@@ -25,20 +25,18 @@
     position: relative;
     display: inline-block;
     width: 575px;
-    margin: 120px 0px 70px 110px;
+    margin: 120px 0px 70px 150px;
 
     &_text {
         font-family: var(--main-font);
         margin: 0;
-        font-size: 30px;
-        color: var(--lightblue);
+        font-size: 33px;
+        color: var(--blue);
         font-weight: 900;
         padding: 70px;
-        border: 2px solid var(--lightblue);
+        border: 3px solid var(--white);
     }
 }
-
-// *click to uncover pic of me*
 
 .me {
     position: relative;
@@ -52,7 +50,17 @@
         width: 100%;
         height: 100%;
     }
+
+    &_vlora {
+        font-family: var(--main-font);
+        font-size: 30px;
+        color: var(--blue);
+        font-weight: 800;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
+
 
 
 .bottomcontainer {
@@ -83,3 +91,4 @@
     text-decoration: none;
     -webkit-text-stroke-color: var(--white);
 }
+
