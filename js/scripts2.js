@@ -12,6 +12,10 @@ const dd = document.querySelector('.link_four');
 const ee = document.querySelector('.link_five');
 const ff = document.querySelector('.link_six');
 
+
+// ------------------------------------------------------------------------
+
+
 a.addEventListener("mouseover", over);
 a.addEventListener("mouseout", out);
 
@@ -27,17 +31,20 @@ function out () {
     aa.style.color = "#80ef7a";
 }
 
-z.addEventListener("mouseover", mouseover);
-z.addEventListener("mouseout", mouseOut);
+// ------------------------------------------------------------------------
 
-function mouseover () {
-    z.style.backgroundColor = "#fffc70";
-    z.style.borderColor = "#fffc70";
-    w.style.color = "#000000";
+
+b.addEventListener("mouseover", overr);
+b.addEventListener("mouseout", outt);
+
+function overr () {
+    b.style.backgroundColor = "#80ef7a";
+    b.style.borderColor = "80ef7a";
+    bb.style.color = "#000000";
 }
 
-function mouseOut () {
-    z.style.backgroundColor = "transparent";
-    z.style.borderColor = "#ffffff";
-    w.style.color = "#fffc70";
+function outt () {
+    b.style.backgroundColor = "transparent";
+    b.style.borderColor = "#ffffff";
+    bb.style.color = "#80ef7a";
 }

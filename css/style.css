@@ -7,12 +7,6 @@
   --yellow: #fffc70;
   --green: #80ef7a;
   --lightblue: #a8eeff;
-  --green1: #b1dbaf;
-  --green2: #92dd90;
-  --green3: #65c661;
-  --green4: #52cc4d;
-  --green5: #31b22c;
-  --green6: #20911b;
 }
 
 html {
@@ -322,15 +316,16 @@ body {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--green);
   line-height: 210px;
+  margin-bottom: 150px;
 }
 
 .showcase {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  margin: 120px 30px 100px 30px;
-  width: 75%;
+  flex-direction: row;
+  width: 40%;
+  margin-left: 150px;
 }
 .showcase_one {
   width: 100%;
@@ -352,21 +347,7 @@ body {
   font-family: var(--main-font);
   text-decoration: none;
   margin: 30px;
-}
-.showcase .link_one {
-  color: var(--green1);
-}
-.showcase .link_two {
-  color: var(--green2);
-}
-.showcase .link_three {
-  color: var(--green3);
-}
-.showcase .link_four {
-  color: var(--green4);
-}
-.showcase .link_five {
-  color: var(--green5);
+  color: var(--green);
 }
 
 .bottomcontainer {
