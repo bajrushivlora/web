@@ -8,14 +8,12 @@ x.addEventListener("mouseout", hoverOut);
 
 function hover () {
     x.style.backgroundColor = "#fffc70";
-    x.style.borderColor = "#fffc70";
+    x.style.borderColor = "#ffffff";
     y.style.color = "#000000";
-    x.style.transition = "opacity 1s";
 }
 
 function hoverOut () {
     x.style.backgroundColor = "transparent";
-    x.style.borderColor = "#ffffff";
     y.style.color = "#fffc70";
 }
 
@@ -24,12 +22,11 @@ z.addEventListener("mouseout", mouseOut);
 
 function mouseover () {
     z.style.backgroundColor = "#fffc70";
-    z.style.borderColor = "#fffc70";
+    z.style.borderColor = "#ffffff";
     w.style.color = "#000000";
 }
 
 function mouseOut () {
     z.style.backgroundColor = "transparent";
-    z.style.borderColor = "#ffffff";
     w.style.color = "#fffc70";
 }
