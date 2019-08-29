@@ -311,12 +311,16 @@ body {
   margin: 0;
   top: 0;
   left: 20px;
-  font-size: 210px;
+  font-size: 170px;
   color: transparent;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: var(--green);
   line-height: 210px;
   margin-bottom: 150px;
+}
+
+.construction {
+  color: red;
 }
 
 .showcase {
