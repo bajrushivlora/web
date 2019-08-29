@@ -320,7 +320,8 @@ body {
 }
 
 .construction {
-  color: red;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: red;
 }
 
 .showcase {
