@@ -1,0 +1,20 @@
+.vloracontainer {
+    position: relative;
+    top: 0;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.vlora {
+    position: relative;
+    font-family: var(--main-font);
+    margin: 0;
+    font-size: 14vw;
+    letter-spacing: -3px;
+    color: transparent;
+    line-height: 20vw;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--blue);
+}
