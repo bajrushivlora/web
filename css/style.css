@@ -4,9 +4,9 @@
   --white: #e2e2e2;
   --black: #000000;
   --orange: #ffbc37;
-  --blue: #002447;
-  --lightblue: #53d3d1;
-  --pink: #FBECEB;
+  --blue: #2c3a94;
+  --lightblue: #4b67b3;
+  --pink: #fbeceb;
 }
 
 html {
@@ -323,20 +323,19 @@ body {
   position: relative;
   top: 0;
   text-align: left;
-  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 50px;
 }
 
 .vlora {
   position: relative;
   font-family: var(--main-font);
   margin: 0;
-  font-size: 14vw;
-  letter-spacing: -3px;
+  font-size: 12vw;
+  letter-spacing: 1px;
   color: transparent;
-  line-height: 20vw;
-  -webkit-text-stroke-width: 3px;
+  line-height: 11vw;
+  -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: var(--blue);
 }
 
@@ -351,7 +350,7 @@ body {
   top: 0;
 }
 .flexbox-header_1 {
-  flex: 2 0;
+  flex: 4 0;
 }
 .flexbox-header_2, .flexbox-header_3, .flexbox-header_4 {
   flex: 1 0;

@@ -2,19 +2,18 @@
     position: relative;
     top: 0;
     text-align: left;
-    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 50px;
 }
 
 .vlora {
     position: relative;
     font-family: var(--main-font);
     margin: 0;
-    font-size: 14vw;
-    letter-spacing: -3px;
+    font-size: 12vw;
+    letter-spacing: 1px;
     color: transparent;
-    line-height: 20vw;
-    -webkit-text-stroke-width: 3px;
+    line-height: 11vw;
+    -webkit-text-stroke-width: .26vw;
     -webkit-text-stroke-color: var(--blue);
 }
