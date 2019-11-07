@@ -1,7 +1,7 @@
 var everything = document.querySelectorAll('.flexbox-work_text');
 
 var myArray = []
-var myAnimation = {distance: '150px', duration: 1200};
+var myAnimation = {distance: '150px', duration: 1200, reset: true};
 
 
 ScrollReveal().reveal(everything, myAnimation);
