@@ -170,7 +170,7 @@ body {
   margin: 60px 32px 45px 32px;
 }
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4 {
-  font-size: 3vw;
+  font-size: 45px;
   color: white;
   font-family: var(--main-font);
   font-weight: 700;
@@ -233,6 +233,61 @@ body {
 }
 .flexbox-header_link:hover {
   color: var(--pink);
+}
+
+@media only screen and (max-width: 720px) {
+  /* For mobile phones: */
+  .flexbox-work_1 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .flexbox-work_1 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .flexbox-work_1 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
