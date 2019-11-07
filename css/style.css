@@ -144,7 +144,7 @@ body {
 
 .flexbox-work {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: stretch;
   justify-content: space-between;
   align-content: flex-start;
@@ -155,16 +155,19 @@ body {
   padding: 0 40px 0 40px;
 }
 .flexbox-work_heading {
+  position: relative;
   font-family: var(--main-font);
-  font-size: 10vw;
-  color: transparent;
-  -webkit-text-stroke-width: 0.2vw;
-  -webkit-text-stroke-color: var(--blue);
   margin: 0;
+  font-size: 12vw;
+  letter-spacing: 1px;
+  color: transparent;
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.26vw;
+  -webkit-text-stroke-color: var(--blue);
 }
 .flexbox-work_right {
   flex: 1 0;
-  margin-right: 40px;
+  margin: 60px 32px 45px 32px;
 }
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4 {
   font-size: 3vw;
@@ -179,7 +182,7 @@ body {
 .flexbox-work_text {
   height: 13vh;
   background-color: var(--lightblue);
-  margin: 8px;
+  margin: 8px 8px 15px 8px;
   display: flex;
   text-decoration: none;
 }
@@ -188,8 +191,7 @@ body {
   position: relative;
   top: 0;
   text-align: left;
-  margin: 0;
-  padding: 50px;
+  margin: 100px 40px 0px 40px;
 }
 
 .heading {

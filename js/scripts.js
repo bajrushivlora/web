@@ -1,32 +1,14 @@
-const x = document.querySelector('.bar_one');
-const y = document.querySelector('.email');
-const z = document.querySelector('.bar_two');
-const w = document.querySelector('.linkedin');
+var everything = document.querySelectorAll('.flexbox-work_text');
 
-x.addEventListener("mouseover", hover);
-x.addEventListener("mouseout", hoverOut);
+var myArray = []
+var myAnimation = {distance: '150px', duration: 1200};
 
-function hover () {
-    x.style.backgroundColor = "#fffc70";
-    x.style.borderColor = "#ffffff";
-    y.style.color = "#000000";
-}
 
-function hoverOut () {
-    x.style.backgroundColor = "transparent";
-    y.style.color = "#fffc70";
-}
+ScrollReveal().reveal(everything, myAnimation);
 
-z.addEventListener("mouseover", mouseover);
-z.addEventListener("mouseout", mouseOut);
 
-function mouseover () {
-    z.style.backgroundColor = "#fffc70";
-    z.style.borderColor = "#ffffff";
-    w.style.color = "#000000";
-}
-
-function mouseOut () {
-    z.style.backgroundColor = "transparent";
-    w.style.color = "#fffc70";
-}
+//opacity
+//easing: 'ease-in'
+//duration: 2500 (how long animations take to complete)
+//distance: 200px
+//reset: true===== restarts the animation when u scroll back up
