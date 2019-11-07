@@ -5,7 +5,7 @@
   --black: #000000;
   --orange: #ffbc37;
   --blue: #2c3a94;
-  --lightblue: #4b67b3;
+  --lightblue: #6687ff;
   --pink: #fbeceb;
 }
 
@@ -169,7 +169,7 @@ body {
   flex: 1 0;
   margin: 60px 32px 45px 32px;
 }
-.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4 {
+.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8 {
   font-size: 45px;
   color: white;
   font-family: var(--main-font);
@@ -181,10 +181,14 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--lightblue);
+  background-color: var(--blue);
   margin: 8px 8px 15px 8px;
   display: flex;
   text-decoration: none;
+  transition: 0.5s;
+}
+.flexbox-work_text:hover {
+  background-color: var(--lightblue);
 }
 
 .headingcontainer {

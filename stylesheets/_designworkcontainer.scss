@@ -28,7 +28,7 @@
         margin: 60px 32px 45px 32px;
     }
 
-    &_1, &_2, &_3, &_4 {
+    &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8 {
         font-size: 45px;
         color: white;
         font-family: var(--main-font);
@@ -41,9 +41,35 @@
 
     &_text {
         height: 13vh;
-        background-color: var(--lightblue);
+        background-color: var(--blue);
         margin: 8px 8px 15px 8px;
         display: flex;
         text-decoration: none;
+        transition: 0.5s;
+    }
+
+    &_text:hover {
+        background-color: var(--lightblue);
     }
 }
+
+
+//MAYBE USE THIS FOR SMTH ELSE !! 
+// .thetext:after {    
+//     background: none repeat scroll 0 0 transparent;
+//     content: "";
+//     display: block;
+//     height: 3px;
+//     left: 0;
+//     position: relative;
+//     background: #fff;
+//     transition: width 0.7s ease 0s, left 0.3s ease 0s;
+//     width: 0;
+// }
+
+// .thetext:hover:after { 
+//     width: 100%; 
+//     left: 0; 
+// }
+
+
