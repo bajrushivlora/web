@@ -169,7 +169,7 @@ body {
   flex: 1 0;
   margin: 60px 32px 45px 32px;
 }
-.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8 {
+.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15 {
   font-size: 45px;
   color: white;
   font-family: var(--main-font);
@@ -272,6 +272,43 @@ body {
   .flexbox-work_8 {
     font-size: 35px;
   }
+
+  .flexbox-work_9 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 35px;
+  }
+}
+div {
+  font-size: 3vw;
+}
+
+@media screen and (min-width: 1200px) {
+  div {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
@@ -306,6 +343,34 @@ body {
   .flexbox-work_8 {
     font-size: 30px;
   }
+
+  .flexbox-work_9 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 400px) {
   /* For mobile phones: */
@@ -338,6 +403,34 @@ body {
   }
 
   .flexbox-work_8 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_15 {
     font-size: 25px;
   }
 }
