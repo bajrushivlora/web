@@ -5,7 +5,7 @@
   --black: #000000;
   --orange: #ffbc37;
   --blue: #2c3a94;
-  --lightblue: #4b67b3;
+  --lightblue: #6687ff;
   --pink: #fbeceb;
 }
 
@@ -155,19 +155,22 @@ body {
   padding: 0 40px 0 40px;
 }
 .flexbox-work_heading {
+  position: relative;
   font-family: var(--main-font);
-  font-size: 10vw;
-  color: transparent;
-  -webkit-text-stroke-width: 0.2vw;
-  -webkit-text-stroke-color: var(--blue);
   margin: 0;
+  font-size: 12vw;
+  letter-spacing: 1px;
+  color: transparent;
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.26vw;
+  -webkit-text-stroke-color: var(--blue);
 }
 .flexbox-work_right {
   flex: 1 0;
-  margin-right: 40px;
+  margin: 60px 32px 45px 32px;
 }
-.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4 {
-  font-size: 3vw;
+.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15 {
+  font-size: 45px;
   color: white;
   font-family: var(--main-font);
   font-weight: 700;
@@ -178,18 +181,21 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--lightblue);
-  margin: 8px;
+  background-color: var(--blue);
+  margin: 8px 8px 15px 8px;
   display: flex;
   text-decoration: none;
+  transition: 0.5s;
+}
+.flexbox-work_text:hover {
+  background-color: var(--lightblue);
 }
 
 .headingcontainer {
   position: relative;
   top: 0;
   text-align: left;
-  margin: 0;
-  padding: 50px;
+  margin: 100px 40px 0px 40px;
 }
 
 .heading {
@@ -231,6 +237,202 @@ body {
 }
 .flexbox-header_link:hover {
   color: var(--pink);
+}
+
+@media only screen and (max-width: 720px) {
+  /* For mobile phones: */
+  .flexbox-work_1 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 35px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 35px;
+  }
+}
+div {
+  font-size: 3vw;
+}
+
+@media screen and (min-width: 1200px) {
+  div {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .flexbox-work_1 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 30px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .flexbox-work_1 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 25px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
