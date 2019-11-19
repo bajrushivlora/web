@@ -301,15 +301,6 @@ body {
     font-size: 35px;
   }
 }
-div {
-  font-size: 3vw;
-}
-
-@media screen and (min-width: 1200px) {
-  div {
-    font-size: 36px;
-  }
-}
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .flexbox-work_1 {
