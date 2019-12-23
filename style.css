@@ -24,104 +24,28 @@ body {
   background-color: var(--orange);
 }
 
-.containerthree {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.contact {
-  position: relative;
-  display: inline-block;
-  font-family: var(--main-font);
-  font-weight: 800;
-  margin: 0;
-  top: 0;
-  left: 20px;
-  font-size: 230px;
-  color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--yellow);
-  line-height: 220px;
-}
-
-.bar {
-  position: relative;
+.contact-flexbox {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  margin-top: 130px;
-  margin-bottom: 100px;
+  flex-flow: column wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 100px;
 }
-.bar_one {
+.contact-flexbox_top {
+  flex: 1 0;
+  padding: 0 40px 0 40px;
+}
+.contact-flexbox_heading {
   position: relative;
-  height: 200px;
-  margin: 50px;
-  width: 400px;
-  border: 3px solid var(--white);
-  text-align: center;
-  line-height: 200px;
-}
-.bar_two {
-  position: relative;
-  height: 200px;
-  margin: 50px;
-  width: 400px;
-  border: 3px solid var(--white);
-  text-align: center;
-  line-height: 200px;
-}
-
-.email {
-  width: 100%;
-  height: 100%;
   font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 80px;
-  color: var(--yellow);
-  text-decoration: none;
-}
-
-.linkedin {
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 80px;
-  color: var(--yellow);
-  text-decoration: none;
-}
-
-.bottomcontainer {
-  bottom: 0px;
-  text-align: center;
-  width: 100%;
-  height: 35px;
-  margin-bottom: 35px;
-}
-
-.bottom {
-  display: inline;
-}
-
-.myname {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  font-family: var(--main-font);
-  font-size: 30px;
-  font-weight: 900;
+  margin: 0;
+  font-size: 12vw;
+  letter-spacing: 1px;
   color: transparent;
-  -webkit-text-stroke-width: 1.3px;
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: var(--blue);
-}
-
-.myname:hover {
-  content: "";
-  text-decoration: none;
-  -webkit-text-stroke-color: var(--white);
 }
 
 .textcontainer {

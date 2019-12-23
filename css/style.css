@@ -7,6 +7,9 @@
   --blue: #2c3a94;
   --lightblue: #6687ff;
   --pink: #fbeceb;
+  --gmailred: #D44638;
+  --linkedinblue: #4875B4;
+  --githubgrey: #292929;
 }
 
 html {
@@ -24,104 +27,75 @@ body {
   background-color: var(--orange);
 }
 
-.containerthree {
+body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 120vh;
+  background-color: var(--orange);
 }
 
-.contact {
-  position: relative;
-  display: inline-block;
-  font-family: var(--main-font);
-  font-weight: 800;
-  margin: 0;
-  top: 0;
-  left: 20px;
-  font-size: 230px;
-  color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--yellow);
-  line-height: 220px;
-}
-
-.bar {
-  position: relative;
+.contact-flexbox {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  margin-top: 130px;
-  margin-bottom: 100px;
+  flex-flow: column wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 100px 40px 0px 40px;
 }
-.bar_one {
+.contact-flexbox_top {
+  flex: 1 0;
+}
+.contact-flexbox_heading {
   position: relative;
-  height: 200px;
-  margin: 50px;
-  width: 400px;
-  border: 3px solid var(--white);
-  text-align: center;
-  line-height: 200px;
-}
-.bar_two {
-  position: relative;
-  height: 200px;
-  margin: 50px;
-  width: 400px;
-  border: 3px solid var(--white);
-  text-align: center;
-  line-height: 200px;
-}
-
-.email {
-  width: 100%;
-  height: 100%;
   font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 80px;
-  color: var(--yellow);
-  text-decoration: none;
-}
-
-.linkedin {
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 80px;
-  color: var(--yellow);
-  text-decoration: none;
-}
-
-.bottomcontainer {
-  bottom: 0px;
-  text-align: center;
-  width: 100%;
-  height: 35px;
-  margin-bottom: 35px;
-}
-
-.bottom {
-  display: inline;
-}
-
-.myname {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  font-family: var(--main-font);
-  font-size: 30px;
-  font-weight: 900;
+  margin: 0;
+  font-size: 12vw;
+  letter-spacing: 1px;
   color: transparent;
-  -webkit-text-stroke-width: 1.3px;
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: var(--blue);
 }
-
-.myname:hover {
-  content: "";
+.contact-flexbox_bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex: 1 0;
+  margin-top: 80px;
+}
+.contact-flexbox_sections {
+  width: 30vw;
+  height: 10vw;
+  background-color: var(--blue);
+  margin: 0px 8px 0px 8px;
+  display: flex;
   text-decoration: none;
-  -webkit-text-stroke-color: var(--white);
+  transition: 0.5s;
+}
+.contact-flexbox_sections1, .contact-flexbox_sections2, .contact-flexbox_sections3 {
+  font-size: 45px;
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  padding: 8px;
+}
+
+#gmail:hover {
+  background-color: var(--gmailred);
+}
+
+#linkedin:hover {
+  background-color: var(--linkedinblue);
+}
+
+#github:hover {
+  background-color: var(--githubgrey);
 }
 
 .textcontainer {
@@ -148,11 +122,10 @@ body {
   align-items: stretch;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 100px;
+  margin: 100px 40px 0px 40px;
 }
 .flexbox-work_left {
   flex: 1 0;
-  padding: 0 40px 0 40px;
 }
 .flexbox-work_heading {
   position: relative;
@@ -167,7 +140,7 @@ body {
 }
 .flexbox-work_right {
   flex: 1 0;
-  margin: 60px 32px 45px 32px;
+  margin-top: 80px;
 }
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15 {
   font-size: 45px;
@@ -182,7 +155,7 @@ body {
 .flexbox-work_text {
   height: 13vh;
   background-color: var(--blue);
-  margin: 8px 8px 15px 8px;
+  margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
@@ -240,7 +213,6 @@ body {
 }
 
 @media only screen and (max-width: 720px) {
-  /* For mobile phones: */
   .flexbox-work_1 {
     font-size: 35px;
   }
@@ -301,17 +273,7 @@ body {
     font-size: 35px;
   }
 }
-div {
-  font-size: 3vw;
-}
-
-@media screen and (min-width: 1200px) {
-  div {
-    font-size: 36px;
-  }
-}
 @media only screen and (max-width: 600px) {
-  /* For mobile phones: */
   .flexbox-work_1 {
     font-size: 30px;
   }
@@ -373,7 +335,6 @@ div {
   }
 }
 @media only screen and (max-width: 400px) {
-  /* For mobile phones: */
   .flexbox-work_1 {
     font-size: 25px;
   }

@@ -4,11 +4,10 @@
     align-items: stretch;
     justify-content: space-between;
     align-content: flex-start;
-    margin-top: 100px;
+    margin: 100px 40px 0px 40px;
 
     &_left {
         flex: 1 0;
-        padding: 0 40px 0 40px;
     }
 
     &_heading {
@@ -25,7 +24,7 @@
 
     &_right {
         flex: 1 0;
-        margin: 60px 32px 45px 32px;
+        margin-top: 80px;
     }
 
     &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15 {
@@ -42,7 +41,7 @@
     &_text {
         height: 13vh;
         background-color: var(--blue);
-        margin: 8px 8px 15px 8px;
+        margin: 8px 0px 15px 0px;
         display: flex;
         text-decoration: none;
         transition: 0.5s;

@@ -1,6 +1,5 @@
 //When the screen gets smaller than 675px
 @media only screen and (max-width: 720px) {
-    /* For mobile phones: */
     .flexbox-work_1 {font-size: 35px;}
     .flexbox-work_2 {font-size: 35px;}
     .flexbox-work_3 {font-size: 35px;}
@@ -19,21 +18,7 @@
 }
 
 
-// div {
-//     font-size: 3vw;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     div {
-//        font-size: 36px;
-//     }
-//   }
-
-
-
-
-
 @media only screen and (max-width: 600px) {
-    /* For mobile phones: */
     .flexbox-work_1 {font-size: 30px;}
     .flexbox-work_2 {font-size: 30px;}
     .flexbox-work_3 {font-size: 30px;}
@@ -52,7 +37,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    /* For mobile phones: */
     .flexbox-work_1 {font-size: 25px;}
     .flexbox-work_2 {font-size: 25px;}
     .flexbox-work_3 {font-size: 25px;}
