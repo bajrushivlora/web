@@ -59,7 +59,7 @@ body {
 }
 .contact-flexbox_bottom {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: stretch;
   justify-content: space-between;
   align-content: flex-start;
@@ -67,10 +67,10 @@ body {
   margin-top: 80px;
 }
 .contact-flexbox_sections {
-  width: 30vw;
+  width: 27vw;
   height: 10vw;
   background-color: var(--blue);
-  margin: 0px 8px 0px 8px;
+  margin: 0 auto;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
