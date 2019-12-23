@@ -212,6 +212,15 @@ body {
   color: var(--pink);
 }
 
+@media only screen and (max-width: 780px) {
+  .contact-flexbox_bottom {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+}
 @media only screen and (max-width: 720px) {
   .flexbox-work_1 {
     font-size: 35px;
