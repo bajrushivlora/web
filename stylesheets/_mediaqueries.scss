@@ -1,8 +1,6 @@
 @media only screen and (max-width: 1120px) {
-    .contact-flexbox { 
-        display: flex; 
-        flex-flow: column wrap;
-    }
+    .contact-flexbox {flex-flow: column wrap;}
+    .contact-flexbox_bottom {flex-flow: row wrap;}
 }
 
 @media only screen and (max-width: 720px) {
@@ -59,3 +57,4 @@
     .flexbox-work_14 {font-size: 25px;}
     .flexbox-work_15 {font-size: 25px;}
 }
+

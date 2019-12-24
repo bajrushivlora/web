@@ -211,13 +211,13 @@ body {
   color: var(--pink);
 }
 
-@media only screen and (max-width: 780px) {
-  .contact-flexbox_bottom {
-    display: flex;
+@media only screen and (max-width: 1120px) {
+  .contact-flexbox {
     flex-flow: column wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    align-content: flex-start;
+  }
+
+  .contact-flexbox_bottom {
+    flex-flow: row wrap;
   }
 }
 @media only screen and (max-width: 720px) {
