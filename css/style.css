@@ -53,7 +53,7 @@ body {
   font-size: 11vw;
   letter-spacing: 1px;
   color: transparent;
-  line-height: 12vw;
+  line-height: 10.5vw;
   -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: var(--blue);
 }
@@ -67,7 +67,7 @@ body {
 }
 .contact-flexbox_sections {
   width: 35vw;
-  height: 10vw;
+  height: 9vw;
   background-color: var(--blue);
   margin: 1vw;
   display: flex;
@@ -218,6 +218,11 @@ body {
 
   .contact-flexbox_bottom {
     flex-flow: row wrap;
+    margin-top: 80px;
+  }
+
+  .contact-flexbox_sections {
+    width: 27vw;
   }
 }
 @media only screen and (max-width: 720px) {
