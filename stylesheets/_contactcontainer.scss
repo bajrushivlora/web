@@ -8,7 +8,7 @@ body {
 
 .contact-flexbox {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: stretch;
     justify-content: space-between;
     align-content: flex-start;
@@ -22,7 +22,7 @@ body {
         position: relative;
         font-family: var(--main-font);
         margin: 0;
-        font-size: 12vw;
+        font-size: 11vw;
         letter-spacing: 1px;
         color: transparent;
         line-height: 12vw;
@@ -32,26 +32,25 @@ body {
 
     &_bottom {
         display: flex;
-        flex-flow: row wrap;
-        align-items: stretch;
-        justify-content: space-between;
-        align-content: flex-start;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: top;
+        align-content: center;
         flex: 1 0;
-        margin-top: 80px;;
     }
 
     &_sections {
-        width: 27vw;
+        width: 35vw;
         height: 10vw;
         background-color: var(--blue);
-        margin: 0 auto;
+        margin: 1vw;
         display: flex;
         text-decoration: none;
         transition: 0.5s;
     }
 
     &_sections1, &_sections2, &_sections3 {
-        font-size: 45px;
+        font-size: 57px;
         color: white;
         font-family: var(--main-font);
         font-weight: 700;
