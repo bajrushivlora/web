@@ -1,10 +1,7 @@
-@media only screen and (max-width: 1000px) {
-    .contact-flexbox_bottom { 
+@media only screen and (max-width: 1120px) {
+    .contact-flexbox { 
         display: flex; 
         flex-flow: column wrap;
-        align-items: stretch;
-        justify-content: space-between;
-        align-content: flex-start;
     }
 }
 
