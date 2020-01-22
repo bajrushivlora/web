@@ -4,6 +4,7 @@
   --white: #e2e2e2;
   --black: #000000;
   --orange: #ffbc37;
+  --lightorange:#ffd175;
   --blue: #2c3a94;
   --lightblue: #6687ff;
   --pink: #fbeceb;
@@ -24,7 +25,7 @@ body {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 
 body {
@@ -32,7 +33,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 120vh;
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 
 .contact-flexbox {
@@ -135,7 +136,7 @@ body {
   color: transparent;
   line-height: 12vw;
   -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--blue);
+  -webkit-text-stroke-color: var(--orange);
 }
 .flexbox-work_right {
   flex: 1 0;
@@ -153,14 +154,14 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--blue);
+  background-color: var(--lightblue);
   margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
 }
 .flexbox-work_text:hover {
-  background-color: var(--lightblue);
+  background-color: var(--orange);
 }
 
 .headingcontainer {
@@ -179,7 +180,7 @@ body {
   color: transparent;
   line-height: 11vw;
   -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--blue);
+  -webkit-text-stroke-color: var(--orange);
 }
 
 .flexbox-header {
@@ -203,12 +204,12 @@ body {
   font-family: var(--text-font);
   font-weight: 200;
   font-size: 2.7vw;
-  color: var(--blue);
+  color: var(--pink);
   text-decoration: none;
   transition: color 0.3s;
 }
 .flexbox-header_link:hover {
-  color: var(--pink);
+  color: var(--orange);
 }
 
 @media only screen and (max-width: 1120px) {
@@ -225,187 +226,248 @@ body {
     width: 27vw;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 920px) {
   .flexbox-work_1 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_2 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_3 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_4 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_5 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_6 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_7 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_8 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_9 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_10 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_11 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_12 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_13 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_14 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_15 {
-    font-size: 35px;
+    font-size: 38px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .flexbox-work_1 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_2 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_3 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_4 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_5 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_6 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_7 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_8 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_9 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_10 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_11 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_12 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_13 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_14 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_15 {
-    font-size: 30px;
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .flexbox-work_1 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 400px) {
   .flexbox-work_1 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_2 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_3 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_4 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_5 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_6 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_7 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_8 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_9 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_10 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_11 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_12 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_13 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_14 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_15 {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 * {
