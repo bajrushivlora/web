@@ -11,21 +11,30 @@
   --gmailred: #D44638;
   --linkedinblue: #4875B4;
   --githubgrey: #292929;
+  --body1: #f7d745;
 }
 
-html {
+html, body {
   margin: 0;
-  padding: 0;
-  width: 100%;
   height: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  min-height: 100vh;
-  background-color: var(--blue);
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.bodyone {
+  background: var(--ombre1);
+}
+
+.bodytwo {
+  background: var(--ombre1);
 }
 
 body {
@@ -33,7 +42,6 @@ body {
   padding: 0;
   width: 100vw;
   height: 120vh;
-  background-color: var(--blue);
 }
 
 .contact-flexbox {
@@ -133,10 +141,12 @@ body {
   margin: 0;
   font-size: 12vw;
   letter-spacing: 1px;
-  color: transparent;
+  word-spacing: 1vw;
+  color: var(--white);
   line-height: 12vw;
-  -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--orange);
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: var(--black);
+  text-shadow: 9px 4px 5px #00163b;
 }
 .flexbox-work_right {
   flex: 1 0;
@@ -177,10 +187,12 @@ body {
   margin: 0;
   font-size: 12vw;
   letter-spacing: 1px;
-  color: transparent;
-  line-height: 11vw;
-  -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--orange);
+  word-spacing: 1vw;
+  color: var(--white);
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: var(--black);
+  text-shadow: 9px 4px 5px #00163b;
 }
 
 .flexbox-header {
@@ -204,12 +216,16 @@ body {
   font-family: var(--text-font);
   font-weight: 200;
   font-size: 2.7vw;
-  color: var(--pink);
+  color: var(--black);
   text-decoration: none;
   transition: color 0.3s;
+  letter-spacing: 0.15vw;
 }
 .flexbox-header_link:hover {
-  color: var(--orange);
+  color: var(--white);
+}
+.flexbox-header_link:visited {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1120px) {

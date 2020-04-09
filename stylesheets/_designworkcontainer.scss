@@ -16,10 +16,12 @@
         margin: 0;
         font-size: 12vw;
         letter-spacing: 1px;
-        color: transparent;
+        word-spacing: 1vw;
+        color: var(--white);
         line-height: 12vw;
-        -webkit-text-stroke-width: .26vw;
-        -webkit-text-stroke-color: var(--orange);
+        -webkit-text-stroke-width: .1vw;
+        -webkit-text-stroke-color: var(--black);
+        text-shadow: 9px 4px 5px #00163b;
     }
 
     &_right {
