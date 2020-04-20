@@ -8,14 +8,13 @@
   --blue: #2c3a94;
   --lightblue: #6687ff;
   --pink: #fbeceb;
-  --gmailred: #D44638;
-  --linkedinblue: #4875B4;
-  --githubgrey: #292929;
   --body1: #fab4e7;
   --body2: #5fc9de;
-  --body3: #a8d658;
+  --body3: #b0e05c;
   --designworkpink: #d663ae;
   --designworkpinkhover: #bd007b;
+  --contactgreen: #69ab27;
+  --contactgreenhover: #458a00;
 }
 
 html {
@@ -96,11 +95,14 @@ body {
 .contact-flexbox_sections {
   width: 35vw;
   height: 9vw;
-  background-color: var(--blue);
+  background-color: var(--contactgreen);
   margin: 1vw;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
+}
+.contact-flexbox_sections:hover {
+  background-color: var(--contactgreenhover);
 }
 .contact-flexbox_sections1, .contact-flexbox_sections2, .contact-flexbox_sections3 {
   font-size: 57px;
@@ -111,18 +113,6 @@ body {
   text-align: center;
   margin: auto;
   padding: 8px;
-}
-
-#gmail:hover {
-  background-color: var(--gmailred);
-}
-
-#linkedin:hover {
-  background-color: var(--linkedinblue);
-}
-
-#github:hover {
-  background-color: var(--githubgrey);
 }
 
 .textcontainer {

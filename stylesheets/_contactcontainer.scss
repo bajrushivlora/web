@@ -43,13 +43,17 @@ body {
     &_sections {
         width: 35vw;
         height: 9vw;
-        background-color: var(--blue);
+        background-color: var(--contactgreen);
         margin: 1vw;
         display: flex;
         text-decoration: none;
         transition: 0.5s;
     }
 
+    &_sections:hover {
+        background-color: var(--contactgreenhover);
+    }
+    
     &_sections1, &_sections2, &_sections3 {
         font-size: 57px;
         color: white;
@@ -63,14 +67,3 @@ body {
 }
 
 
-#gmail:hover {
-    background-color: var(--gmailred);
-}
-
-#linkedin:hover {
-    background-color: var(--linkedinblue);
-}
-
-#github:hover {
-    background-color: var(--githubgrey);
-}
