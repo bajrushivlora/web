@@ -4,9 +4,16 @@
   --white: #e2e2e2;
   --black: #000000;
   --orange: #ffbc37;
+  --lightorange:#ffd175;
   --blue: #2c3a94;
   --lightblue: #6687ff;
   --pink: #fbeceb;
+  --gmailred: #D44638;
+  --linkedinblue: #4875B4;
+  --githubgrey: #292929;
+  --body1: #fab4e7;
+  --body2: #5fc9de;
+  --body3: #a8d658;
 }
 
 html {
@@ -21,31 +28,97 @@ body {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--orange);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.bodyone {
+  color: var(--body1);
+}
+
+.bodytwo {
+  color: var(--body2);
+}
+
+.bodythree {
+  color: var(--body3);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 120vh;
 }
 
 .contact-flexbox {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: stretch;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 100px;
+  margin: 100px 40px 0px 40px;
 }
 .contact-flexbox_top {
   flex: 1 0;
-  padding: 0 40px 0 40px;
 }
 .contact-flexbox_heading {
   position: relative;
   font-family: var(--main-font);
   margin: 0;
-  font-size: 12vw;
+  font-size: 11vw;
   letter-spacing: 1px;
   color: transparent;
-  line-height: 12vw;
+  line-height: 10.5vw;
   -webkit-text-stroke-width: 0.26vw;
   -webkit-text-stroke-color: var(--blue);
+}
+.contact-flexbox_bottom {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: top;
+  align-content: center;
+  flex: 1 0;
+}
+.contact-flexbox_sections {
+  width: 35vw;
+  height: 9vw;
+  background-color: var(--blue);
+  margin: 1vw;
+  display: flex;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.contact-flexbox_sections1, .contact-flexbox_sections2, .contact-flexbox_sections3 {
+  font-size: 57px;
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  padding: 8px;
+}
+
+#gmail:hover {
+  background-color: var(--gmailred);
+}
+
+#linkedin:hover {
+  background-color: var(--linkedinblue);
+}
+
+#github:hover {
+  background-color: var(--githubgrey);
 }
 
 .textcontainer {
@@ -72,11 +145,10 @@ body {
   align-items: stretch;
   justify-content: space-between;
   align-content: flex-start;
-  margin-top: 100px;
+  margin: 100px 40px 0px 40px;
 }
 .flexbox-work_left {
   flex: 1 0;
-  padding: 0 40px 0 40px;
 }
 .flexbox-work_heading {
   position: relative;
@@ -84,14 +156,16 @@ body {
   margin: 0;
   font-size: 12vw;
   letter-spacing: 1px;
-  color: transparent;
+  word-spacing: 1vw;
+  color: var(--white);
   line-height: 12vw;
-  -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--blue);
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: var(--black);
+  text-shadow: 9px 4px 5px #00163b;
 }
 .flexbox-work_right {
   flex: 1 0;
-  margin: 60px 32px 45px 32px;
+  margin-top: 80px;
 }
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15 {
   font-size: 45px;
@@ -105,14 +179,14 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--blue);
-  margin: 8px 8px 15px 8px;
+  background-color: var(--lightblue);
+  margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
 }
 .flexbox-work_text:hover {
-  background-color: var(--lightblue);
+  background-color: var(--orange);
 }
 
 .headingcontainer {
@@ -128,10 +202,12 @@ body {
   margin: 0;
   font-size: 12vw;
   letter-spacing: 1px;
-  color: transparent;
-  line-height: 11vw;
-  -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--blue);
+  word-spacing: 1vw;
+  color: var(--white);
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: var(--black);
+  text-shadow: 9px 4px 5px #00163b;
 }
 
 .flexbox-header {
@@ -155,199 +231,345 @@ body {
   font-family: var(--text-font);
   font-weight: 200;
   font-size: 2.7vw;
-  color: var(--blue);
+  color: var(--black);
   text-decoration: none;
   transition: color 0.3s;
+  letter-spacing: 0.15vw;
 }
 .flexbox-header_link:hover {
-  color: var(--pink);
+  color: var(--white);
+}
+.flexbox-header_link:visited {
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 720px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 1120px) {
+  .contact-flexbox {
+    flex-flow: column wrap;
+  }
+
+  .contact-flexbox_bottom {
+    flex-flow: row wrap;
+    margin-top: 80px;
+  }
+
+  .contact-flexbox_sections {
+    width: 27vw;
+  }
+}
+@media only screen and (max-width: 920px) {
   .flexbox-work_1 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_2 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_3 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_4 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_5 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_6 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_7 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_8 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_9 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_10 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_11 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_12 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_13 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_14 {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .flexbox-work_15 {
-    font-size: 35px;
+    font-size: 38px;
   }
 }
-@media only screen and (max-width: 600px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 780px) {
   .flexbox-work_1 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_2 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_3 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_4 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_5 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_6 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_7 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_8 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_9 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_10 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_11 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_12 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_13 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_14 {
-    font-size: 30px;
+    font-size: 33px;
   }
 
   .flexbox-work_15 {
-    font-size: 30px;
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .flexbox-work_1 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 28px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* For mobile phones: */
   .flexbox-work_1 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_2 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_3 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_4 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_5 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_6 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_7 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_8 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_9 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_10 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_11 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_12 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_13 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_14 {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .flexbox-work_15 {
-    font-size: 25px;
+    font-size: 23px;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--blue);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--lightblue);
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--lightblue);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--blue);
 }
 
 /*# sourceMappingURL=style.css.map */

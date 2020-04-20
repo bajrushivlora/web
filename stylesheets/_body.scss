@@ -23,5 +23,13 @@ canvas {
 }
 
 .bodyone { 
-    color: #fab4e7;
+    color: var(--body1);
+}
+
+.bodytwo {
+    color: var(--body2);
+}
+
+.bodythree { 
+    color: var(--body3);
 }
