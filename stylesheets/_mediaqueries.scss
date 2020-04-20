@@ -1,12 +1,15 @@
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+    .menuicon {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1120px) {
     .contact-flexbox {flex-flow: column wrap;}
     .contact-flexbox_bottom {flex-flow: row wrap; margin-top: 80px}
     .contact-flexbox_sections {width: 27vw;}
 }
 
-// @media only screen and (max-width: 1000px) {
-//     .flexbox-header {}
-// }
 
 @media only screen and (max-width: 920px) {
     .flexbox-work_1 {font-size: 38px;}
@@ -26,6 +29,14 @@
     .flexbox-work_15 {font-size: 38px;}
 }
 
+@media only screen and (max-width: 1000px) {
+    .flexbox-header {
+        display: none;
+    }
+    .menuicon {
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 780px) {
     .flexbox-work_1 {font-size: 33px;}
