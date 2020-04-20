@@ -42,7 +42,7 @@
 
     &_text {
         height: 13vh;
-        background-color: var(--lightblue);
+        background-color: var(--designworkpink);
         margin: 8px 0px 15px 0px;
         display: flex;
         text-decoration: none;
@@ -50,7 +50,7 @@
     }
 
     &_text:hover {
-        background-color: var(--orange);
+        background-color: var(--designworkpinkhover);
     }
 }
 

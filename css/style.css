@@ -14,6 +14,8 @@
   --body1: #fab4e7;
   --body2: #5fc9de;
   --body3: #a8d658;
+  --designworkpink: #d663ae;
+  --designworkpinkhover: #bd007b;
 }
 
 html {
@@ -201,14 +203,14 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--lightblue);
+  background-color: var(--designworkpink);
   margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
 }
 .flexbox-work_text:hover {
-  background-color: var(--orange);
+  background-color: var(--designworkpinkhover);
 }
 
 .headingcontainer {
