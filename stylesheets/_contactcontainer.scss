@@ -42,7 +42,7 @@ body {
 
     &_sections {
         width: 35vw;
-        height: 9vw;
+        height: 10vw;
         background-color: var(--contactgreen);
         margin: 1vw;
         display: flex;
@@ -53,7 +53,7 @@ body {
     &_sections:hover {
         background-color: var(--contactgreenhover);
     }
-    
+
     &_sections1, &_sections2, &_sections3 {
         font-size: 57px;
         color: white;

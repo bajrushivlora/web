@@ -94,7 +94,7 @@ body {
 }
 .contact-flexbox_sections {
   width: 35vw;
-  height: 9vw;
+  height: 10vw;
   background-color: var(--contactgreen);
   margin: 1vw;
   display: flex;
@@ -262,18 +262,32 @@ body {
     display: none;
   }
 }
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1200px) {
   .contact-flexbox {
     flex-flow: column wrap;
   }
 
   .contact-flexbox_bottom {
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin-top: 80px;
   }
 
   .contact-flexbox_sections {
-    width: 27vw;
+    width: 100%;
+    height: 13vh;
+    background-color: var(--contactgreen);
+    margin: 8px 0px 15px 0px;
+    display: flex;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .flexbox-header {
+    display: none;
+  }
+
+  .menuicon {
+    display: block;
   }
 }
 @media only screen and (max-width: 920px) {
@@ -336,14 +350,17 @@ body {
   .flexbox-work_15 {
     font-size: 38px;
   }
-}
-@media only screen and (max-width: 1000px) {
-  .flexbox-header {
-    display: none;
+
+  .contact-flexbox_sections1 {
+    font-size: 45px;
   }
 
-  .menuicon {
-    display: block;
+  .contact-flexbox_sections2 {
+    font-size: 45px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 45px;
   }
 }
 @media only screen and (max-width: 780px) {
@@ -405,6 +422,18 @@ body {
 
   .flexbox-work_15 {
     font-size: 33px;
+  }
+
+  .contact-flexbox_sections1 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections2 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 710px) {
@@ -529,67 +558,6 @@ body {
     font-size: 23px;
   }
 }
-@media only screen and (max-width: 600px) {
-  .flexbox-work_1 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_2 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_3 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_4 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_5 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_6 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_7 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_8 {
-    font-size: 24px;
-  }
-
-  .flexbox-work_9 {
-    font-size: 23px;
-  }
-
-  .flexbox-work_10 {
-    font-size: 23px;
-  }
-
-  .flexbox-work_11 {
-    font-size: 23px;
-  }
-
-  .flexbox-work_12 {
-    font-size: 23px;
-  }
-
-  .flexbox-work_13 {
-    font-size: 23px;
-  }
-
-  .flexbox-work_14 {
-    font-size: 23px;
-  }
-
-  .flexbox-work_15 {
-    font-size: 23px;
-  }
-}
 @media only screen and (max-width: 530px) {
   .flexbox-work_1 {
     font-size: 21px;
@@ -649,6 +617,18 @@ body {
 
   .flexbox-work_15 {
     font-size: 21px;
+  }
+
+  .contact-flexbox_sections1 {
+    font-size: 40px;
+  }
+
+  .contact-flexbox_sections2 {
+    font-size: 40px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 400px) {
