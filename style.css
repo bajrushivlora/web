@@ -8,12 +8,13 @@
   --blue: #2c3a94;
   --lightblue: #6687ff;
   --pink: #fbeceb;
-  --gmailred: #D44638;
-  --linkedinblue: #4875B4;
-  --githubgrey: #292929;
   --body1: #fab4e7;
   --body2: #5fc9de;
-  --body3: #a8d658;
+  --body3: #b0e05c;
+  --designworkpink: #d663ae;
+  --designworkpinkhover: #bd007b;
+  --contactgreen: #69ab27;
+  --contactgreenhover: #458a00;
 }
 
 html {
@@ -30,26 +31,20 @@ body {
   min-height: 100vh;
 }
 
-canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -9999;
+.mybody {
+  background: #000000;
 }
 
 .bodyone {
-  color: var(--body1);
+  background: var(--body1);
 }
 
 .bodytwo {
-  color: var(--body2);
+  background: var(--body2);
 }
 
 .bodythree {
-  color: var(--body3);
+  background: var(--body3);
 }
 
 body {
@@ -74,29 +69,33 @@ body {
   position: relative;
   font-family: var(--main-font);
   margin: 0;
-  font-size: 11vw;
+  font-size: 12vw;
   letter-spacing: 1px;
-  color: transparent;
-  line-height: 10.5vw;
-  -webkit-text-stroke-width: 0.26vw;
-  -webkit-text-stroke-color: var(--blue);
+  word-spacing: 1vw;
+  color: var(--white);
+  line-height: 12vw;
+  -webkit-text-stroke-width: 0.1vw;
+  -webkit-text-stroke-color: var(--black);
+  text-shadow: 9px 4px 5px #00163b;
 }
 .contact-flexbox_bottom {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: top;
-  align-content: center;
+  align-content: flex-end;
+  justify-content: flex-end;
   flex: 1 0;
 }
 .contact-flexbox_sections {
-  width: 35vw;
-  height: 9vw;
-  background-color: var(--blue);
+  width: 40vw;
+  height: 10vw;
+  background-color: var(--contactgreen);
   margin: 1vw;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
+}
+.contact-flexbox_sections:hover {
+  background-color: var(--contactgreenhover);
 }
 .contact-flexbox_sections1, .contact-flexbox_sections2, .contact-flexbox_sections3 {
   font-size: 57px;
@@ -107,18 +106,6 @@ body {
   text-align: center;
   margin: auto;
   padding: 8px;
-}
-
-#gmail:hover {
-  background-color: var(--gmailred);
-}
-
-#linkedin:hover {
-  background-color: var(--linkedinblue);
-}
-
-#github:hover {
-  background-color: var(--githubgrey);
 }
 
 .textcontainer {
@@ -132,11 +119,75 @@ body {
 .text {
   position: relative;
   font-family: var(--text-font);
-  font-weight: 400;
+  font-weight: 500;
+  margin: 0px;
+  font-size: 2.5vw;
+  color: var(--white);
+  line-height: 3.5vw;
+}
+
+.listheading {
+  position: relative;
+  font-family: var(--text-font);
+  font-weight: 600;
   margin: 0;
   font-size: 2.5vw;
-  color: var(--lightblue);
-  line-height: 3.5vw;
+  color: var(--white);
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+.skillsheading {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 2vw;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.list {
+  position: relative;
+  font-family: var(--text-font);
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+  color: var(--white);
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.likeslist {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 2vw;
+  color: var(--white);
+  list-style-type: none;
+  padding: 0;
+}
+
+.bio-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px 40px 50px 40px;
+}
+.bio-flexbox_section {
+  flex: 1 0;
+  margin: 2vw;
+  padding: 35px;
+  background: #0f8aa3;
+  height: 40vw;
+}
+
+.vlorapicture {
+  display: flex;
+  flex: 1 0;
+  max-width: 98%;
+  display: block;
+  box-shadow: 8px 8px 5px #203140;
 }
 
 .flexbox-work {
@@ -179,14 +230,14 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--lightblue);
+  background-color: var(--designworkpink);
   margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
 }
 .flexbox-work_text:hover {
-  background-color: var(--orange);
+  background-color: var(--designworkpinkhover);
 }
 
 .headingcontainer {
@@ -200,14 +251,11 @@ body {
   position: relative;
   font-family: var(--main-font);
   margin: 0;
-  font-size: 12vw;
+  font-size: 50px;
   letter-spacing: 1px;
   word-spacing: 1vw;
-  color: var(--white);
+  color: #ffffff;
   line-height: 12vw;
-  -webkit-text-stroke-width: 0.1vw;
-  -webkit-text-stroke-color: var(--black);
-  text-shadow: 9px 4px 5px #00163b;
 }
 
 .flexbox-header {
@@ -237,24 +285,47 @@ body {
   letter-spacing: 0.15vw;
 }
 .flexbox-header_link:hover {
-  color: var(--white);
+  color: white;
 }
 .flexbox-header_link:visited {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  .menuicon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
   .contact-flexbox {
     flex-flow: column wrap;
   }
 
   .contact-flexbox_bottom {
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin-top: 80px;
   }
 
   .contact-flexbox_sections {
-    width: 27vw;
+    width: 100%;
+    height: 13vh;
+    background-color: var(--contactgreen);
+    margin: 8px 0px 15px 0px;
+    display: flex;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .flexbox-header {
+    display: none;
+  }
+
+  .menuicon {
+    display: block;
+  }
+
+  .bio-flexbox {
+    flex-flow: column wrap;
   }
 }
 @media only screen and (max-width: 920px) {
@@ -317,6 +388,18 @@ body {
   .flexbox-work_15 {
     font-size: 38px;
   }
+
+  .contact-flexbox_sections1 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections2 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 50px;
+  }
 }
 @media only screen and (max-width: 780px) {
   .flexbox-work_1 {
@@ -377,6 +460,18 @@ body {
 
   .flexbox-work_15 {
     font-size: 33px;
+  }
+
+  .contact-flexbox_sections1 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections2 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 710px) {
@@ -440,37 +535,37 @@ body {
     font-size: 28px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .flexbox-work_1 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_2 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_3 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_4 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_5 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_6 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_7 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_8 {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .flexbox-work_9 {
@@ -499,6 +594,140 @@ body {
 
   .flexbox-work_15 {
     font-size: 23px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .flexbox-work_1 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 21px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 21px;
+  }
+
+  .contact-flexbox_sections1 {
+    font-size: 40px;
+  }
+
+  .contact-flexbox_sections2 {
+    font-size: 40px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .flexbox-work_1 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 18px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 18px;
   }
 }
 * {
@@ -570,6 +799,75 @@ body {
 
 .active, .dot:hover {
   background-color: var(--blue);
+}
+
+/* The side navigation menu */
+.menuicon {
+  margin: 0 auto;
+  padding: 15px;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  opacity: 70%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: var(--text-font);
+  opacity: 100%;
+}
+
+.sidenav a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: relative;
+  background: #fff;
+  transition: width 0.7s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -31,14 +31,8 @@ body {
   min-height: 100vh;
 }
 
-canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -9999;
+.mybody {
+  background: #000000;
 }
 
 .bodyone {
@@ -135,11 +129,20 @@ body {
 .listheading {
   position: relative;
   font-family: var(--text-font);
-  font-weight: 500;
-  margin: 40px 0px 40px 0px;
+  font-weight: 600;
+  margin: 0;
   font-size: 2.5vw;
   color: var(--white);
-  line-height: 3.5vw;
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+.skillsheading {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 2vw;
+  color: var(--white);
+  margin-bottom: 10px;
 }
 
 .list {
@@ -147,9 +150,44 @@ body {
   font-family: var(--text-font);
   font-weight: 300;
   margin: 0;
-  font-size: 2.5vw;
+  padding: 0;
+  font-size: 1.5vw;
   color: var(--white);
   margin-top: 20px;
+  list-style-type: none;
+}
+
+.likeslist {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 2vw;
+  color: var(--white);
+  list-style-type: none;
+  padding: 0;
+}
+
+.bio-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px 40px 50px 40px;
+}
+.bio-flexbox_section {
+  flex: 1 0;
+  margin: 2vw;
+  padding: 35px;
+  background: #0f8aa3;
+  height: 40vw;
+}
+
+.vlorapicture {
+  display: flex;
+  flex: 1 0;
+  max-width: 98%;
+  display: block;
+  box-shadow: 8px 8px 5px #203140;
 }
 
 .flexbox-work {
@@ -213,14 +251,10 @@ body {
   position: relative;
   font-family: var(--main-font);
   margin: 0;
-  font-size: 12vw;
+  font-size: 140px;
   letter-spacing: 1px;
-  word-spacing: 1vw;
-  color: var(--white);
-  line-height: 12vw;
-  -webkit-text-stroke-width: 0.1vw;
-  -webkit-text-stroke-color: var(--black);
-  text-shadow: 9px 4px 5px #00163b;
+  color: #ffffff;
+  line-height: 170px;
 }
 
 .flexbox-header {
@@ -244,13 +278,13 @@ body {
   font-family: var(--text-font);
   font-weight: 200;
   font-size: 2.7vw;
-  color: var(--black);
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
   letter-spacing: 0.15vw;
 }
 .flexbox-header_link:hover {
-  color: white;
+  color: blue;
 }
 .flexbox-header_link:visited {
   text-decoration: none;
@@ -287,6 +321,10 @@ body {
 
   .menuicon {
     display: block;
+  }
+
+  .bio-flexbox {
+    flex-flow: column wrap;
   }
 }
 @media only screen and (max-width: 920px) {

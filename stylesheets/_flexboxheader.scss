@@ -21,14 +21,14 @@
         font-family: var(--text-font);
         font-weight: 200; 
         font-size: 2.7vw;
-        color: var(--black);
+        color: #ffffff;
         text-decoration: none;
         transition: color .3s;
         letter-spacing: .15vw;
     }
     
     &_link:hover {
-        color: white;
+        color: blue;
     }
 
     &_link:visited {

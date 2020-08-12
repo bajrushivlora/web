@@ -19,11 +19,20 @@
 .listheading {
     position: relative;
     font-family: var(--text-font);
-    font-weight: 500;
-    margin: 40px 0px 40px 0px;
+    font-weight: 600;
+    margin: 0;
     font-size: 2.5vw;
     color: var(--white);
-    line-height: 3.5vw;
+    margin-bottom: 35px;
+    font-style: italic;
+}
+
+.skillsheading {
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 2vw;
+    color: var(--white);
+    margin-bottom: 10px;
 }
 
 .list {
@@ -31,7 +40,43 @@
     font-family: var(--text-font);
     font-weight: 300;
     margin: 0;
-    font-size: 2.5vw;
+    padding: 0;
+    font-size: 1.5vw;
     color: var(--white);
     margin-top: 20px;
+    list-style-type: none;
+}
+
+.likeslist {
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 2vw;
+    color: var(--white);
+    list-style-type: none;
+    padding: 0;
+}
+
+.bio-flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0px 40px 50px 40px;
+
+    &_section {
+        flex: 1 0;
+        margin: 2vw;
+        padding: 35px;
+        background: #0f8aa3;
+        height: 40vw;
+    }
+}
+
+.vlorapicture {
+    display: flex;
+    flex: 1 0;
+    max-width: 98%; 
+    display:block; 
+    box-shadow: 8px 8px 5px #203140;
 }
