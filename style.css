@@ -31,8 +31,14 @@ body {
   min-height: 100vh;
 }
 
+#c {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .mybody {
-  background: #000000;
+  background: red;
 }
 
 .bodyone {
@@ -251,11 +257,16 @@ body {
   position: relative;
   font-family: var(--main-font);
   margin: 0;
-  font-size: 50px;
+  font-size: 140px;
   letter-spacing: 1px;
-  word-spacing: 1vw;
   color: #ffffff;
-  line-height: 12vw;
+  line-height: 170px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .flexbox-header {
@@ -279,13 +290,13 @@ body {
   font-family: var(--text-font);
   font-weight: 200;
   font-size: 2.7vw;
-  color: var(--black);
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
   letter-spacing: 0.15vw;
 }
 .flexbox-header_link:hover {
-  color: white;
+  color: blue;
 }
 .flexbox-header_link:visited {
   text-decoration: none;
@@ -820,7 +831,7 @@ body {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: black;
+  background-color: blue;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;

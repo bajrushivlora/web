@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
+    <style>
+        canvas { display: block; }
+    </style>
     <link rel="stylesheet" href="https://use.typekit.net/tdf3bfw.css">
     <link rel="stylesheet" href="https://use.typekit.net/tdf3bfw.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -14,7 +17,6 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <!-- <script src="sketch.js"></script> -->
 </head>
 
 <body class="mybody">
@@ -41,12 +43,22 @@
         </div>
     </div>
 
+    <span class="openspan" onclick="openNav()"> L&#9787;&#9865;K</span>
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="https://www.vlorab.com">Home</a>
-        <a href="https://www.vlorab.com/designwork.html">My Work</a>
-        <a href="https://www.vlorab.com/biography.html">Bio</a>
-        <a href="https://www.vlorab.com/contact.html">Contact</a>
+        <a href="https://www.vlorab.com" class="links">
+            <span class="words">HOME</span>
+        </a>
+        <a href="https://www.vlorab.com/designwork.html" class="links">
+            <span class="words">MY WORK</span>
+        </a>
+        <a href="https://www.vlorab.com/biography.html" class="links">
+            <span class="words">BIOGRAPHY</span>
+        </a>
+        <a href="https://www.vlorab.com/contact.html" class="links">
+            <span class="words">CONTACT</span>
+        </a>
     </div>
 
 
@@ -56,5 +68,8 @@
         </h1>
     </div>
     
+    <!-- <script src="js/three.js"></script>
+    <script src="js/3-javascript.js"></script>
+    <canvas id="c"></canvas> -->
 </body>
 </html>

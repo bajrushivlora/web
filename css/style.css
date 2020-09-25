@@ -32,7 +32,7 @@ body {
 }
 
 .mybody {
-  background: #000000;
+  background: black;
 }
 
 .bodyone {
@@ -257,6 +257,12 @@ body {
   line-height: 170px;
 }
 
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .flexbox-header {
   position: relative;
   display: flex;
@@ -319,12 +325,16 @@ body {
     display: none;
   }
 
-  .menuicon {
-    display: block;
+  .openspan {
+    display: inline !important;
   }
 
   .bio-flexbox {
     flex-flow: column wrap;
+  }
+
+  body {
+    padding-top: 10px;
   }
 }
 @media only screen and (max-width: 920px) {
@@ -800,11 +810,20 @@ body {
   background-color: var(--blue);
 }
 
-/* The side navigation menu */
-.menuicon {
-  margin: 0 auto;
-  padding: 15px;
+.openspan {
+  width: 3vw;
+  cursor: pointer;
   color: white;
+  font-family: var(--text-font);
+  font-weight: 200;
+  font-size: 45px;
+  margin-left: 20px;
+  display: none;
+  transition: color 0.4s;
+}
+
+.openspan:hover {
+  color: blue;
 }
 
 .sidenav {
@@ -819,54 +838,54 @@ body {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: black;
+  background-color: blue;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
-  opacity: 70%;
+  opacity: 90%;
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav .links {
   padding: 8px 8px 8px 32px;
+  width: 190px;
   text-decoration: none;
-  font-size: 30px;
   color: white;
   display: block;
-  transition: 0.3s;
-  font-family: var(--text-font);
   opacity: 100%;
 }
 
-.sidenav a:after {
-  background: none repeat scroll 0 0 transparent;
-  content: "";
-  display: block;
-  height: 3px;
-  left: 0;
-  position: relative;
-  background: #fff;
-  transition: width 0.7s ease 0s, left 0.3s ease 0s;
-  width: 0;
+.words {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: 200;
+  transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover:after {
-  width: 100%;
-  left: 0;
+.words:hover {
+  color: red;
+}
+
+.sidenav a:hover {
+  color: red;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  top: 10px;
+  right: 30px;
+  font-size: 50px;
   color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=style.css.map */

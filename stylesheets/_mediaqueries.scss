@@ -26,11 +26,17 @@
     .flexbox-header {
         display: none;
     }
-    .menuicon {
-        display: block;
+
+    .openspan {
+        display: inline !important;
     }
+
     .bio-flexbox {
         flex-flow: column wrap;
+    }
+
+    body {
+        padding-top: 10px;
     }
 }
 
