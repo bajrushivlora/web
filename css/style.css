@@ -677,6 +677,10 @@ canvas {
   .contact-flexbox_sections3 {
     font-size: 40px;
   }
+
+  .words {
+    font-weight: 300 !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   .flexbox-work_1 {
