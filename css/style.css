@@ -217,7 +217,7 @@ body {
   flex: 1 0;
   margin-top: 80px;
 }
-.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15 {
+.flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15, .flexbox-work_16 {
   font-size: 45px;
   color: white;
   font-family: var(--text-font);
@@ -232,11 +232,12 @@ body {
   margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.7s ease-in-out;
   border: 2px white solid;
 }
-.flexbox-work_text:hover {
-  background-color: white;
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14, .text15, .text16 {
+  transition: 0.7s ease-in-out;
 }
 
 .headingcontainer {

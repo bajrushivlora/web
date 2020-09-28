@@ -33,7 +33,7 @@
         margin-top: 80px;
     }
 
-    &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15 {
+    &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15, &_16 {
         font-size: 45px;
         color: white;
         font-family: var(--text-font);
@@ -49,11 +49,11 @@
         margin: 8px 0px 15px 0px;
         display: flex;
         text-decoration: none;
-        transition: 0.5s;
+        transition: 0.7s ease-in-out;
         border: 2px white solid;
     }
+}
 
-    &_text:hover {
-        background-color: white;
-    }
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14, .text15, .text16 {
+    transition: 0.7s ease-in-out;
 }
