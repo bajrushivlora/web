@@ -101,6 +101,10 @@
     .flexbox-work_15 {font-size: 28px;}
 }
 
+@media only screen and (max-width: 710px) {
+    .flexbox-work_left-header {font-size: 9.5vw;}
+}
+
 @media only screen and (max-width: 600px) {
     .flexbox-work_1 {font-size: 24px;}
     .flexbox-work_2 {font-size: 24px;}
@@ -141,6 +145,10 @@
     .words {font-weight: 300 !important;}
 }
 
+@media only screen and (max-width: 440px) {
+    .flexbox-work_left-header {font-size: 9vw;}
+}
+
 @media only screen and (max-width: 400px) {
     .flexbox-work_1 {font-size: 18px;}
     .flexbox-work_2 {font-size: 18px;}
@@ -157,4 +165,8 @@
     .flexbox-work_13 {font-size: 18px;}
     .flexbox-work_14 {font-size: 18px;}
     .flexbox-work_15 {font-size: 18px;}
+}
+
+@media only screen and (max-width: 355px) {
+    .flexbox-work_left-header {font-size: 8.5vw;}
 }

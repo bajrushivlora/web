@@ -32,7 +32,7 @@
   /* The navigation menu links */
   .sidenav .links {
     padding: 8px 8px 8px 32px;
-    width: 190px;
+    width: 210px;
     text-decoration: none;
     color: white;
     display: block;
@@ -41,11 +41,12 @@
 
   .words {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
     font-family: var(--text-font);
     font-weight: 200;
     transition: 0.3s;
+    letter-spacing: 1px;
   }
 
   .words:hover {
@@ -62,7 +63,7 @@
     position: absolute;
     top: 10px;
     right: 30px;
-    font-size: 50px;
+    font-size: 55px;
     color: white;
     transition: 0.3s;
     text-decoration: none;

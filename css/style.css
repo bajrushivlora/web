@@ -3,12 +3,7 @@
   --text-font: "nimbus-sans", sans-serif;
   --white: #e2e2e2;
   --black: #000000;
-  --orange: #ffbc37;
-  --lightorange:#ffd175;
-  --blue: #2c3a94;
-  --lightblue: #6687ff;
-  --pink: #fbeceb;
-  --body1: #fab4e7;
+  --body1: #ff413b;
   --body2: #5fc9de;
   --body3: #b0e05c;
   --designworkpink: #d663ae;
@@ -190,29 +185,33 @@ body {
   box-shadow: 8px 8px 5px #203140;
 }
 
+.circular {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 2px 3px 3px;
+  margin: 0 auto;
+}
+
 .flexbox-work {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: stretch;
   justify-content: space-between;
   align-content: flex-start;
   margin: 100px 40px 0px 40px;
 }
 .flexbox-work_left {
-  flex: 1 0;
+  display: flex;
+  flex-flow: row nowrap;
 }
-.flexbox-work_heading {
-  position: relative;
-  font-family: var(--main-font);
-  margin: 0;
-  font-size: 12vw;
-  letter-spacing: 1px;
-  word-spacing: 1vw;
-  color: var(--white);
-  line-height: 12vw;
-  -webkit-text-stroke-width: 0.1vw;
-  -webkit-text-stroke-color: var(--black);
-  text-shadow: 9px 4px 5px #00163b;
+.flexbox-work_left-header {
+  flex: 1 0;
+  width: 100%;
+  color: white;
+  font-size: 10.3vw;
+  text-align: center;
 }
 .flexbox-work_right {
   flex: 1 0;
@@ -221,8 +220,8 @@ body {
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15 {
   font-size: 45px;
   color: white;
-  font-family: var(--main-font);
-  font-weight: 700;
+  font-family: var(--text-font);
+  font-weight: 300;
   text-decoration: none;
   text-align: center;
   margin: auto;
@@ -230,14 +229,14 @@ body {
 }
 .flexbox-work_text {
   height: 13vh;
-  background-color: var(--designworkpink);
   margin: 8px 0px 15px 0px;
   display: flex;
   text-decoration: none;
   transition: 0.5s;
+  border: 2px white solid;
 }
 .flexbox-work_text:hover {
-  background-color: var(--designworkpinkhover);
+  background-color: white;
 }
 
 .headingcontainer {
@@ -544,6 +543,11 @@ canvas {
     font-size: 28px;
   }
 }
+@media only screen and (max-width: 710px) {
+  .flexbox-work_left-header {
+    font-size: 9.5vw;
+  }
+}
 @media only screen and (max-width: 600px) {
   .flexbox-work_1 {
     font-size: 24px;
@@ -682,6 +686,11 @@ canvas {
     font-weight: 300 !important;
   }
 }
+@media only screen and (max-width: 440px) {
+  .flexbox-work_left-header {
+    font-size: 9vw;
+  }
+}
 @media only screen and (max-width: 400px) {
   .flexbox-work_1 {
     font-size: 18px;
@@ -741,6 +750,11 @@ canvas {
 
   .flexbox-work_15 {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .flexbox-work_left-header {
+    font-size: 8.5vw;
   }
 }
 * {
@@ -855,7 +869,7 @@ canvas {
 /* The navigation menu links */
 .sidenav .links {
   padding: 8px 8px 8px 32px;
-  width: 190px;
+  width: 210px;
   text-decoration: none;
   color: white;
   display: block;
@@ -864,11 +878,12 @@ canvas {
 
 .words {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   color: white;
   font-family: var(--text-font);
   font-weight: 200;
   transition: 0.3s;
+  letter-spacing: 1px;
 }
 
 .words:hover {
@@ -884,7 +899,7 @@ canvas {
   position: absolute;
   top: 10px;
   right: 30px;
-  font-size: 50px;
+  font-size: 55px;
   color: white;
   transition: 0.3s;
   text-decoration: none;

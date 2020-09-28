@@ -1,27 +1,31 @@
+.circular {
+    background: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 2px 3px 3px;
+    margin: 0 auto;
+}
+
 .flexbox-work {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: stretch;
     justify-content: space-between;
     align-content: flex-start;
     margin: 100px 40px 0px 40px;
 
     &_left {
-        flex: 1 0;
+        display: flex;
+        flex-flow: row nowrap;
     }
 
-    &_heading {
-        position: relative;
-        font-family: var(--main-font);
-        margin: 0;
-        font-size: 12vw;
-        letter-spacing: 1px;
-        word-spacing: 1vw;
-        color: var(--white);
-        line-height: 12vw;
-        -webkit-text-stroke-width: .1vw;
-        -webkit-text-stroke-color: var(--black);
-        text-shadow: 9px 4px 5px #00163b;
+    &_left-header {
+        flex: 1 0;
+        width: 100%;
+        color: white;
+        font-size: 10.3vw;
+        text-align: center;
     }
 
     &_right {
@@ -32,8 +36,8 @@
     &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15 {
         font-size: 45px;
         color: white;
-        font-family: var(--main-font);
-        font-weight: 700;
+        font-family: var(--text-font);
+        font-weight: 300;
         text-decoration: none;
         text-align: center;
         margin: auto;
@@ -42,14 +46,14 @@
 
     &_text {
         height: 13vh;
-        background-color: var(--designworkpink);
         margin: 8px 0px 15px 0px;
         display: flex;
         text-decoration: none;
         transition: 0.5s;
+        border: 2px white solid;
     }
 
     &_text:hover {
-        background-color: var(--designworkpinkhover);
+        background-color: white;
     }
 }
