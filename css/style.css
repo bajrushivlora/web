@@ -1,15 +1,10 @@
 :root {
   --main-font: "fatfrank", sans-serif;
   --text-font: "nimbus-sans", sans-serif;
-  --white: #e2e2e2;
   --black: #000000;
   --body1: #ff413b;
-  --body2: #5fc9de;
+  --body2: #edcc37;
   --body3: #b0e05c;
-  --designworkpink: #d663ae;
-  --designworkpinkhover: #bd007b;
-  --contactgreen: #69ab27;
-  --contactgreenhover: #458a00;
 }
 
 html {
@@ -103,86 +98,58 @@ body {
   padding: 8px;
 }
 
-.textcontainer {
-  position: relative;
-  top: 0;
-  text-align: left;
-  margin: 0;
-  padding: 50px;
-}
-
-.text {
-  position: relative;
-  font-family: var(--text-font);
-  font-weight: 500;
-  margin: 0px;
-  font-size: 2.5vw;
-  color: var(--white);
-  line-height: 3.5vw;
-}
-
-.listheading {
-  position: relative;
-  font-family: var(--text-font);
-  font-weight: 600;
-  margin: 0;
-  font-size: 2.5vw;
-  color: var(--white);
-  margin-bottom: 35px;
-  font-style: italic;
-}
-
-.skillsheading {
-  font-family: var(--text-font);
-  font-weight: 500;
-  font-size: 2vw;
-  color: var(--white);
-  margin-bottom: 10px;
-}
-
-.list {
-  position: relative;
-  font-family: var(--text-font);
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5vw;
-  color: var(--white);
-  margin-top: 20px;
-  list-style-type: none;
-}
-
-.likeslist {
-  font-family: var(--text-font);
-  font-weight: 500;
-  font-size: 2vw;
-  color: var(--white);
-  list-style-type: none;
-  padding: 0;
-}
-
 .bio-flexbox {
   display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
+  flex-flow: column wrap;
   justify-content: space-between;
-  align-content: center;
   margin: 0px 40px 50px 40px;
 }
-.bio-flexbox_section {
+.bio-flexbox_top {
   flex: 1 0;
-  margin: 2vw;
-  padding: 35px;
-  background: #0f8aa3;
-  height: 40vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+.bio-flexbox_toptitle {
+  flex: 1 0;
+  text-align: center;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 8vw;
+}
+.bio-flexbox_middle {
+  flex: 1 0;
+  border: 3px white solid;
+  padding: 3.5vw;
+  margin-bottom: 3.5vw;
+}
+.bio-flexbox_middleparagraph {
+  margin: 0;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 50px;
+  font-weight: 300;
+}
+.bio-flexbox_bottom {
+  flex: 1 0;
+  display: flex;
+  flex-flow: column wrap;
+}
+.bio-flexbox_bottomskills1, .bio-flexbox_bottomskills2, .bio-flexbox_bottomskills3 {
+  border: 3px white solid;
+  padding: 3.5vw;
+  margin-bottom: 3.5vw;
+}
+.bio-flexbox_bottomskills1coding, .bio-flexbox_bottomskills2design, .bio-flexbox_bottomskills3prototype {
+  margin: 0;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 50px;
+  font-weight: 300;
 }
 
-.vlorapicture {
-  display: flex;
-  flex: 1 0;
-  max-width: 98%;
-  display: block;
-  box-shadow: 8px 8px 5px #203140;
+.underline {
+  font-weight: 500;
 }
 
 .circular {
@@ -319,6 +286,22 @@ canvas {
     display: flex;
     text-decoration: none;
   }
+
+  .bio-flexbox_middleparagraph {
+    font-size: 45px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 45px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 45px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 45px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .flexbox-header {
@@ -335,6 +318,22 @@ canvas {
 
   body {
     padding-top: 10px;
+  }
+
+  .bio-flexbox_middleparagraph {
+    font-size: 42px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 42px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 42px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 42px;
   }
 }
 @media only screen and (max-width: 920px) {
@@ -395,6 +394,26 @@ canvas {
   }
 
   .flexbox-work_15 {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 7.5vw;
+  }
+
+  .bio-flexbox_middleparagraph {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
     font-size: 38px;
   }
 
@@ -471,6 +490,22 @@ canvas {
     font-size: 33px;
   }
 
+  .bio-flexbox_middleparagraph {
+    font-size: 32px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 32px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 32px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 32px;
+  }
+
   .contact-flexbox_sections1 {
     font-size: 50px;
   }
@@ -543,10 +578,42 @@ canvas {
   .flexbox-work_15 {
     font-size: 28px;
   }
-}
-@media only screen and (max-width: 710px) {
+
+  .bio-flexbox_middleparagraph {
+    font-size: 26px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 26px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 26px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 26px;
+  }
+
   .flexbox-work_left-header {
     font-size: 9.5vw;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .bio-flexbox_middleparagraph {
+    font-size: 21px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 21px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 21px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 21px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -608,6 +675,23 @@ canvas {
 
   .flexbox-work_15 {
     font-size: 23px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .bio-flexbox_middleparagraph {
+    font-size: 17px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 17px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 17px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 17px;
   }
 }
 @media only screen and (max-width: 530px) {
@@ -687,9 +771,18 @@ canvas {
     font-weight: 300 !important;
   }
 }
+@media only screen and (max-width: 484px) {
+  .bio-flexbox_toptitle {
+    font-size: 7.2vw;
+  }
+}
 @media only screen and (max-width: 440px) {
   .flexbox-work_left-header {
     font-size: 9vw;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 7vw;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -756,6 +849,10 @@ canvas {
 @media only screen and (max-width: 355px) {
   .flexbox-work_left-header {
     font-size: 8.5vw;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 6.7vw;
   }
 }
 * {

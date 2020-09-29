@@ -1,82 +1,60 @@
-.textcontainer {
-    position: relative;
-    top: 0;
-    text-align: left;
-    margin: 0;
-    padding: 50px;
-}
-
-.text {
-    position: relative;
-    font-family: var(--text-font);
-    font-weight: 500;
-    margin: 0px;
-    font-size: 2.5vw;
-    color: var(--white);
-    line-height: 3.5vw;
-}
-
-.listheading {
-    position: relative;
-    font-family: var(--text-font);
-    font-weight: 600;
-    margin: 0;
-    font-size: 2.5vw;
-    color: var(--white);
-    margin-bottom: 35px;
-    font-style: italic;
-}
-
-.skillsheading {
-    font-family: var(--text-font);
-    font-weight: 500;
-    font-size: 2vw;
-    color: var(--white);
-    margin-bottom: 10px;
-}
-
-.list {
-    position: relative;
-    font-family: var(--text-font);
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5vw;
-    color: var(--white);
-    margin-top: 20px;
-    list-style-type: none;
-}
-
-.likeslist {
-    font-family: var(--text-font);
-    font-weight: 500;
-    font-size: 2vw;
-    color: var(--white);
-    list-style-type: none;
-    padding: 0;
-}
-
 .bio-flexbox {
     display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
+    flex-flow: column wrap;
     justify-content: space-between;
-    align-content: center;
     margin: 0px 40px 50px 40px;
 
-    &_section {
+    &_top {
         flex: 1 0;
-        margin: 2vw;
-        padding: 35px;
-        background: #0f8aa3;
-        height: 40vw;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &_toptitle {
+        flex: 1 0;
+        text-align: center;
+        color: white;
+        font-family: var(--text-font);
+        font-weight: 400;
+        font-size: 8vw;
+    }
+
+    &_middle {
+        flex: 1 0;
+        border: 3px white solid;
+        padding: 3.5vw;        
+        margin-bottom: 3.5vw;
+    }
+
+    &_middleparagraph {
+        margin: 0;
+        color: white;
+        font-family: var(--text-font);
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    &_bottom {
+        flex: 1 0;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    &_bottomskills1, &_bottomskills2, &_bottomskills3 {
+        border: 3px white solid;
+        padding: 3.5vw;        
+        margin-bottom: 3.5vw;
+    }
+
+    &_bottomskills1coding, &_bottomskills2design, &_bottomskills3prototype {
+        margin: 0;
+        color: white;
+        font-family: var(--text-font);
+        font-size: 50px;
+        font-weight: 300;
     }
 }
 
-.vlorapicture {
-    display: flex;
-    flex: 1 0;
-    max-width: 98%; 
-    display:block; 
-    box-shadow: 8px 8px 5px #203140;
+.underline {
+    font-weight: 500;
 }

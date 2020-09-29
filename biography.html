@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body class= "bodytwo">
@@ -37,62 +38,57 @@
             </a>
         </div>
     </div>
-    <span class="menuicon" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    
+    <span class="openspan" onclick="openNav()"> L&#9787;&#9865;K</span>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="https://www.vlorab.com">Home</a>
-        <a href="https://www.vlorab.com/designwork.html">My Work</a>
-        <a href="https://www.vlorab.com/biography.html">Bio</a>
-        <a href="https://www.vlorab.com/contact.html">Contact</a>
+        <a href="https://www.vlorab.com" class="links">
+            <span class="words">HOME</span>
+        </a>
+        <a href="https://www.vlorab.com/designwork.html" class="links">
+            <span class="words">MY WORK</span>
+        </a>
+        <a href="https://www.vlorab.com/biography.html" class="links">
+            <span class="words">BIOGRAPHY</span>
+        </a>
+        <a href="https://www.vlorab.com/contact.html" class="links">
+            <span class="words">CONTACT</span>
+        </a>
     </div>
 
-    <div class="headingcontainer">
-        <h1 class="heading">
-            who's the person behind the screen?
-        </h1>
-    </div>
-
-    <div class="textcontainer">
-        <p class="text">
-            Vlora is a New York-based graphic designer. She is a third year student at Parsons School of Design, 
-            studying Communication Design.
-        </p> 
-    </div>
 
     <div class="bio-flexbox">
-        <div class="bio-flexbox_section">
-            <h1 class="listheading"> She looks like: </h1>
-                <img class="vlorapicture" src="pfp/vloraa.jpg">
+        <div class="bio-flexbox_top">
+            <p class="bio-flexbox_toptitle">
+                &#9758; 𝖒𝖊, 𝖒𝖞𝖘𝖊𝖑𝖋, 𝖆𝖓𝖉 𝖎 &#9756;
+            </p>
         </div>
-        <div class="bio-flexbox_section">
-            <h1 class="listheading"> She has learned: </h1>
-            <ul class="list">
-                <h1 class="skillsheading">Coding</h1>
-                    <li>HTML, CSS, Javascript</li>
-                    <li>Swift UI, Xcode</li>
-                <h1 class="skillsheading"> Prototyping</h1>
-                    <li>Invision</li>
-                    <li>Sketch</li>
-                    <li>Figma</li>  
-                <h1 class="skillsheading">Design</h1>
-                    <li>Adobe InDesign</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-            </ul> 
+
+        <div class="bio-flexbox_middle" id="everythingbio">
+            <p class="bio-flexbox_middleparagraph">
+                Vlora is a New York-based graphic designer. She is a Senior at Parsons School of Design, 
+                studying Communication Design. She enjoys coding and designing for web and print. 
+            </p> 
         </div>
-        <div class="bio-flexbox_section">
-            <h1 class="listheading"> She likes to: </h1>
-            <ul class="likeslist">
-                <li>Cook food</li>
-                <li>Paint</li>
-                <li>Code</li>
-                <li>Eat food</li>
-                <li>Go for runs</li>
-                <li>Watch the sunrise</li>
-                <li>?</li>
-                <li>?</li>
-            </ul> 
+        <div class="bio-flexbox_bottom" id="everythingbio">
+            <div class="bio-flexbox_bottomskills1" id="everythingbio">
+                <p class="bio-flexbox_bottomskills1coding">
+                    <span class="underline">CODING</span>: HTML, CSS, Javascript, Swift UI and Xcode
+                </p>
+            </div>
+
+            <div class="bio-flexbox_bottomskills2" id="everythingbio">
+                <p class="bio-flexbox_bottomskills2design">
+                    <span class="underline">DESIGN</span>: Adobe InDesign, Illustrator, Photoshop
+                </p>
+            </div>
+
+            <div class="bio-flexbox_bottomskills3" id="everythingbio">
+                <p class="bio-flexbox_bottomskills3prototype">
+                    <span class="underline">PROTOTYPING</span>: Invision, Sketch, Figma, Principle
+                </p>
+            </div>
         </div>
     </div>
 

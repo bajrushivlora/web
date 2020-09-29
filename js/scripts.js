@@ -1,9 +1,17 @@
 console.log("hey");
 
-var everything = document.querySelectorAll('.flexbox-work_text');
-var myAnimation = {distance: '150px', duration: 1400};
+var everythingWork = document.querySelectorAll('.flexbox-work_text');
+var myAnimationWork = {distance: '150px', duration: 1400};
 
-ScrollReveal().reveal(everything, myAnimation);
+ScrollReveal().reveal(everythingWork, myAnimationWork);
+
+
+
+var everythingBio = document.querySelectorAll('#everythingbio');
+var myAnimationBio = {distance: '150px', duration: 1700};
+
+ScrollReveal().reveal(everythingBio, myAnimationBio);
+
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
