@@ -11,12 +11,6 @@ body {
     width: 100vw;
     min-height: 100vh;
 }
-
-// #c {
-//     width: 100%;
-//     height: auto;
-//     display: block;
-//  }
  
 .mybody {
     background: black;
@@ -32,4 +26,6 @@ body {
 
 .bodythree { 
     background: var(--body3);
+    height: 100%;
+	min-height: 100%;
 }

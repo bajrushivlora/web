@@ -4,7 +4,7 @@
   --black: #000000;
   --body1: #ff413b;
   --body2: #edcc37;
-  --body3: #b0e05c;
+  --body3: #5170ed;
 }
 
 html {
@@ -35,77 +35,62 @@ body {
 
 .bodythree {
   background: var(--body3);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 120vh;
+  height: 100%;
+  min-height: 100%;
 }
 
 .contact-flexbox {
   display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
+  flex-flow: column nowrap;
   justify-content: space-between;
-  align-content: flex-start;
-  margin: 100px 40px 0px 40px;
+  margin: 0px 40px 100px 40px;
+  height: 100%;
 }
-.contact-flexbox_top {
+.contact-flexbox_toptitle {
   flex: 1 0;
-}
-.contact-flexbox_heading {
-  position: relative;
-  font-family: var(--main-font);
-  margin: 0;
-  font-size: 12vw;
-  letter-spacing: 1px;
-  word-spacing: 1vw;
-  color: var(--white);
-  line-height: 12vw;
-  -webkit-text-stroke-width: 0.1vw;
-  -webkit-text-stroke-color: var(--black);
-  text-shadow: 9px 4px 5px #00163b;
+  text-align: center;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 8vw;
+  letter-spacing: -0.4vw;
 }
 .contact-flexbox_bottom {
   display: flex;
-  flex-flow: column wrap;
-  align-content: flex-end;
-  justify-content: flex-end;
-  flex: 1 0;
+  flex-flow: row wrap;
+  flex: 1;
 }
-.contact-flexbox_sections {
-  width: 40vw;
-  height: 10vw;
-  background-color: var(--contactgreen);
+.contact-flexbox_bottom1, .contact-flexbox_bottom2, .contact-flexbox_bottom3 {
+  flex: 1;
+  border: 3px white solid;
   margin: 1vw;
+  padding: 10px;
   display: flex;
+  align-items: center;
+}
+
+.contact-font {
+  font-family: "helvetica", sans-serif;
+  letter-spacing: -3px;
+}
+
+.contact-links {
   text-decoration: none;
-  transition: 0.5s;
-}
-.contact-flexbox_sections:hover {
-  background-color: var(--contactgreenhover);
-}
-.contact-flexbox_sections1, .contact-flexbox_sections2, .contact-flexbox_sections3 {
-  font-size: 57px;
   color: white;
-  font-family: var(--main-font);
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  margin: auto;
-  padding: 8px;
+  font-family: var(--text-font);
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 auto;
 }
 
 .bio-flexbox {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
-  margin: 0px 40px 50px 40px;
+  margin: 0px 40px 100px 40px;
+  height: 100%;
 }
 .bio-flexbox_top {
-  flex: 1 0;
   display: flex;
   flex-flow: row wrap;
 }
@@ -116,13 +101,12 @@ body {
   font-family: var(--text-font);
   font-weight: 400;
   font-size: 8vw;
+  letter-spacing: -0.4vw;
 }
 .bio-flexbox_middle {
-  flex: 1 0;
   border: 3px white solid;
   padding: 3.5vw;
   margin-bottom: 3.5vw;
-  margin-top: 80px;
 }
 .bio-flexbox_middleparagraph {
   margin: 0;
@@ -140,6 +124,7 @@ body {
   border: 3px white solid;
   padding: 3.5vw;
   margin-bottom: 3.5vw;
+  flex: 1;
 }
 .bio-flexbox_bottomskills1coding, .bio-flexbox_bottomskills2design, .bio-flexbox_bottomskills3prototype {
   margin: 0;
@@ -164,15 +149,14 @@ body {
 
 .flexbox-work {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   align-items: stretch;
   justify-content: space-between;
-  align-content: flex-start;
   margin: 100px 40px 0px 40px;
 }
 .flexbox-work_left {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 .flexbox-work_left-header {
   flex: 1 0;
@@ -186,26 +170,34 @@ body {
   margin-top: 80px;
 }
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15, .flexbox-work_16 {
+  flex: 1 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   font-size: 45px;
   color: white;
   font-family: var(--text-font);
   font-weight: 300;
   text-decoration: none;
-  text-align: center;
-  margin: auto;
-  padding: 8px;
+  margin: 0 auto;
 }
 .flexbox-work_text {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   height: 13vh;
   margin: 8px 0px 15px 0px;
-  display: flex;
+  border: 2px white solid;
   text-decoration: none;
   transition: 0.7s ease-in-out;
-  border: 2px white solid;
+  padding: 10px;
 }
 
 .text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14, .text15, .text16 {
   transition: 0.7s ease-in-out;
+  text-align: center;
 }
 
 .headingcontainer {
@@ -264,28 +256,77 @@ canvas {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 1001px) and (max-width: 1600px) {
-  .menuicon {
-    display: none;
-  }
-}
 @media only screen and (max-width: 1200px) {
   .contact-flexbox {
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
   }
 
   .contact-flexbox_bottom {
     flex-flow: column wrap;
-    margin-top: 80px;
   }
 
-  .contact-flexbox_sections {
-    width: 100%;
-    height: 13vh;
-    background-color: var(--contactgreen);
-    margin: 8px 0px 15px 0px;
-    display: flex;
-    text-decoration: none;
+  .flexbox-work_1 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 43px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 43px;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 8.1vw;
   }
 
   .bio-flexbox_middleparagraph {
@@ -314,11 +355,75 @@ canvas {
   }
 
   .bio-flexbox {
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
   }
 
   body {
     padding-top: 10px;
+  }
+
+  .flexbox-work_1 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 42px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 42px;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 8vw;
   }
 
   .bio-flexbox_middleparagraph {
@@ -339,6 +444,99 @@ canvas {
 }
 @media only screen and (max-width: 920px) {
   .flexbox-work_1 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_2 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_3 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_4 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_5 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_6 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_7 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_8 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_9 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_10 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_11 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_12 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_13 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_14 {
+    font-size: 41px;
+  }
+
+  .flexbox-work_15 {
+    font-size: 41px;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 7.9vw;
+  }
+
+  .bio-flexbox_middleparagraph {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_bottomskills1coding {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_bottomskills2design {
+    font-size: 38px;
+  }
+
+  .bio-flexbox_bottomskills3prototype {
+    font-size: 38px;
+  }
+
+  .contact-flexbox_sections1 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections2 {
+    font-size: 50px;
+  }
+
+  .contact-flexbox_sections3 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .flexbox-work_1 {
     font-size: 38px;
   }
 
@@ -396,99 +594,71 @@ canvas {
 
   .flexbox-work_15 {
     font-size: 38px;
-  }
-
-  .bio-flexbox_toptitle {
-    font-size: 7.5vw;
-  }
-
-  .bio-flexbox_middleparagraph {
-    font-size: 38px;
-  }
-
-  .bio-flexbox_bottomskills1coding {
-    font-size: 38px;
-  }
-
-  .bio-flexbox_bottomskills2design {
-    font-size: 38px;
-  }
-
-  .bio-flexbox_bottomskills3prototype {
-    font-size: 38px;
-  }
-
-  .contact-flexbox_sections1 {
-    font-size: 50px;
-  }
-
-  .contact-flexbox_sections2 {
-    font-size: 50px;
-  }
-
-  .contact-flexbox_sections3 {
-    font-size: 50px;
   }
 }
 @media only screen and (max-width: 780px) {
   .flexbox-work_1 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_2 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_3 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_4 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_5 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_6 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_7 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_8 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_9 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_10 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_11 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_12 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_13 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_14 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   .flexbox-work_15 {
-    font-size: 33px;
+    font-size: 35px;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 7.8vw;
   }
 
   .bio-flexbox_middleparagraph {
@@ -507,77 +677,77 @@ canvas {
     font-size: 32px;
   }
 
-  .contact-flexbox_sections1 {
-    font-size: 50px;
+  .contact-font {
+    letter-spacing: 0px;
   }
 
-  .contact-flexbox_sections2 {
-    font-size: 50px;
-  }
-
-  .contact-flexbox_sections3 {
-    font-size: 50px;
+  .contact-bottom {
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 710px) {
   .flexbox-work_1 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_2 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_3 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_4 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_5 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_6 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_7 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_8 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_9 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_10 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_11 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_12 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_13 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_14 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   .flexbox-work_15 {
-    font-size: 28px;
+    font-size: 35px;
+  }
+
+  .bio-flexbox_toptitle {
+    font-size: 7.1vw;
   }
 
   .bio-flexbox_middleparagraph {
@@ -601,6 +771,10 @@ canvas {
   }
 }
 @media only screen and (max-width: 630px) {
+  .bio-flexbox_toptitle {
+    font-size: 7vw;
+  }
+
   .bio-flexbox_middleparagraph {
     font-size: 21px;
   }
@@ -676,6 +850,10 @@ canvas {
 
   .flexbox-work_15 {
     font-size: 23px;
+  }
+
+  .contact-links {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -774,7 +952,7 @@ canvas {
 }
 @media only screen and (max-width: 484px) {
   .bio-flexbox_toptitle {
-    font-size: 7.2vw;
+    font-size: 6.9vw;
   }
 }
 @media only screen and (max-width: 440px) {
@@ -783,7 +961,7 @@ canvas {
   }
 
   .bio-flexbox_toptitle {
-    font-size: 7vw;
+    font-size: 6.7vw;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -846,6 +1024,10 @@ canvas {
   .flexbox-work_15 {
     font-size: 18px;
   }
+
+  .bio-flexbox_toptitle {
+    font-size: 6.5vw;
+  }
 }
 @media only screen and (max-width: 355px) {
   .flexbox-work_left-header {
@@ -853,7 +1035,7 @@ canvas {
   }
 
   .bio-flexbox_toptitle {
-    font-size: 6.7vw;
+    font-size: 6.3vw;
   }
 }
 * {

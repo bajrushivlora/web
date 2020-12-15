@@ -1,68 +1,48 @@
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 120vh;
-}
-
 .contact-flexbox {
     display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    align-content: flex-start;
-    margin: 100px 40px 0px 40px;
+    margin: 0px 40px 100px 40px;
+    height: 100%;
 
-    &_top {
+    &_toptitle {
         flex: 1 0;
-    }
-
-    &_heading { 
-        position: relative;
-        font-family: var(--main-font);
-        margin: 0;
-        font-size: 12vw;
-        letter-spacing: 1px;
-        word-spacing: 1vw;
-        color: var(--white);
-        line-height: 12vw;
-        -webkit-text-stroke-width: .1vw;
-        -webkit-text-stroke-color: var(--black);
-        text-shadow: 9px 4px 5px #00163b;
+        text-align: center;
+        color: white;
+        font-family: var(--text-font);
+        font-weight: 400;
+        font-size: 8vw;
+        letter-spacing: -0.4vw;
     }
 
     &_bottom {
         display: flex;
-        flex-flow: column wrap;
-        align-content: flex-end;
-        justify-content: flex-end;
-        flex: 1 0;
+        flex-flow: row wrap;
+        flex: 1;
     }
 
-    &_sections {
-        width: 40vw;
-        height: 10vw;
-        background-color: var(--contactgreen);
+    &_bottom1, &_bottom2, &_bottom3 {
+        flex: 1;
+        border: 3px white solid;
         margin: 1vw;
+        padding: 10px;
         display: flex;
-        text-decoration: none;
-        transition: 0.5s;
+        align-items: center;
     }
+}
 
-    &_sections:hover {
-        background-color: var(--contactgreenhover);
-    }
+.contact-font {
+    font-family: 'helvetica', sans-serif;
+    letter-spacing: -3px;
+}
 
-    &_sections1, &_sections2, &_sections3 {
-        font-size: 57px;
-        color: white;
-        font-family: var(--main-font);
-        font-weight: 700;
-        text-decoration: none;
-        text-align: center;
-        margin: auto;
-        padding: 8px;
-    }
+.contact-links {
+    text-decoration: none;
+    color: white;
+    font-family: var(--text-font);
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0 auto;
 }
 
 
