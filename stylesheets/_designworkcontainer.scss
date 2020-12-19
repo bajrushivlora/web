@@ -1,19 +1,11 @@
-.circular {
-    background: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    box-shadow: 2px 3px 3px;
-    margin: 0 auto;
-}
-
 .flexbox-work {
     display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    margin: 100px 40px 0px 40px;
+    margin: 50px 40px 100px 40px;
+    height: 100%;
 
+    //top
     &_left {
         display: flex;
         flex-flow: row wrap;
@@ -27,9 +19,11 @@
         text-align: center;
     }
 
+    //bottom
     &_right {
-        flex: 1 0;
-        margin-top: 80px;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1;
     }
 
     &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15, &_16 {
@@ -38,7 +32,7 @@
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
-        font-size: 45px;
+        font-size: 4vw;
         color: white;
         font-family: var(--text-font);
         font-weight: 300;

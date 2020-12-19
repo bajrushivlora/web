@@ -1,28 +1,23 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var plusButton = document.querySelector(".antarctica-menu_zoomin");
+var minusButton = document.querySelector(".antarctica-menu_zoomout");
+var imageFlexbox = document.querySelector(".antarctica-flexbox");
+var flexboxColumn = document.querySelectorAll(".antarctica-flexbox_column");
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+plusButton.addEventListener("click", oneImageView);
+minusButton.addEventListener("click", twoImageView);
+
+function oneImageView() {
+  for (var i = 0; i < flexboxColumn.length; i++) {
+    flexboxColumn[i].style.flex = "100%";
+    flexboxColumn[i].style.maxWidth = "100%";
+    flexboxColumn[i].style.padding = "0px";
+  }
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+function twoImageView() {
+  for(var i = 0; i < flexboxColumn.length; i++) {
+    flexboxColumn[i].style.flex = null;
+    flexboxColumn[i].style.maxWidth = null;
+    flexboxColumn[i].style.padding = null;
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }

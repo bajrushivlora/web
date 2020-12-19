@@ -1,69 +1,119 @@
-* {box-sizing:border-box}
+.topbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 50px 50px 30px 50px;
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 900px;
-    position: relative;
-    margin: auto;
-    margin-top: 100px;
+    &_goback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 1px solid white;
+        background: none;
+        width: 120px;
+        height: 60px;
+        font-size: 3vw;
+        color: white;
+        font-family: var(--text-font);
+        font-weight: bold;
+        transition: 0.4s ease-in;
+        outline: none;
+        margin-right: 25px;
+    }
+
+    &_goback:hover {
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+    }
+
+    &_pagetitle {
+        display: flex;
+        flex-flow: nowrap;
+        margin-left: 25px;
+    }
+    
+    &_pagetitle-text {
+        font-size: 6vw;
+        font-family: var(--text-font);
+        color: white;
+        font-weight: 600;
+        margin: 0;
+        letter-spacing: -4px;
+    }
 }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
+.antarctica {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.antarctica-menu {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 25px;
+
+    &_zoomin, &_zoomout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 1px solid white;
+        background: none;
+        width: 60px;
+        height: 60px;
+        font-size: 3vw;
+        color: white;
+        font-family: var(--text-font);
+        font-weight: bold;
+        transition: 0.4s ease-in;
+        outline: none;
+    }
+
+    &_zoomin:hover, &_zoomout:hover {
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+    }
+
+    &_zoomout {
+        margin-top: 20px;
+    }
+
 }
 
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.antarctica-textbox {
+    flex: 1;
+    margin-left: 25px;
+
+    &_text { 
+        margin: 0;
+        color: white;
+        font-family: var(--text-font);
+        font-size: 1.8vw;
+        color: white;
+        font-weight: 300;
+    }
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: var(--blue);
-}
+.antarctica-flexbox {
+    flex: 1.5;
+    margin: 0px 25px 0px 25px;
+    display: flex;
+    flex-flow: row wrap;
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: var(--lightblue);
-    font-size: 18px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    font-family: var(--text-font);
-    font-weight: 700;
-}
+    &_column {
+        flex: 50%;
+        max-width: 47%;
+        padding: 0 5px;
+    }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: var(--lightblue);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: var(--blue);
+    &_columnimage {
+        width: 100%;
+        margin: 3px;
+        border: 0.2px solid white;
+    }
 }
 

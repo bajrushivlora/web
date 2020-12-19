@@ -12,9 +12,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body class="mybody">
     <div class="flexbox-header">
         <div class="flexbox-header_1">
             <a class="flexbox-header_link" href="https://www.vlorab.com">
@@ -46,113 +48,55 @@
         </div>
     </div>   
 
-
-<div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-        <div class="numbertext"> 1 / 13 </div>
-        <img src="antarctica/ant1.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-        <div class="numbertext"> 2 / 13 </div>
-        <img src="antarctica/ant2.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-        <div class="numbertext"> 3 / 13 </div>
-        <img src="antarctica/ant3.jpg" style="width:100%">
+    <div class="topbar">
+        <div onclick="window.location = 'https://vlorab.com/designwork'" class="topbar_goback">
+            ←
+        </div>
+        <div class="topbar_pagetitle">
+            <p class="topbar_pagetitle-text">
+                Antarctica Survival Guide: Print
+            </p>
+        </div>
     </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 4 / 13 </div>
-        <img src="antarctica/ant4.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-        <div class="numbertext"> 5 / 13 </div>
-        <img src="antarctica/ant5.jpg" style="width:100%">
-    </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 6 / 13 </div>
-        <img src="antarctica/ant6.jpg" style="width:100%">
-    </div>
+    <div class="antarctica">
+        <div class="antarctica-menu">
+            <button class="antarctica-menu_zoomin">
+                +
+            </button>
+            <button class="antarctica-menu_zoomout">
+                –
+            </button>
+        </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 7 / 13 </div>
-        <img src="antarctica/ant7.jpg" style="width:100%">
-    </div>
+        <div class="antarctica-flexbox">
+            <div class="antarctica-flexbox_column one">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant1.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant2.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant3.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant4.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant5.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant6.jpg">
+            </div>
+            <div class="antarctica-flexbox_column two">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant7.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant8.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant9.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant10.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant11.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant12.jpg">
+                <img class="antarctica-flexbox_columnimage" src="antarctica/ant13.jpg">
+            </div>
+        </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 8 / 13 </div>
-        <img src="antarctica/ant8.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext"> 9 / 13 </div>
-        <img src="antarctica/ant9.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext"> 10 / 13 </div>
-        <img src="antarctica/ant10.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext"> 11 / 13 </div>
-        <img src="antarctica/ant11.jpg" style="width:100%">
-
-    <div class="mySlides fade">
-        <div class="numbertext"> 12 / 13 </div>
-        <img src="antarctica/ant12.jpg" style="width:100%">
+        <div class="antarctica-textbox">
+            <p class="antarctica-textbox_text">
+                Lorem ipsum blah blahThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            </p>
+        </div>
     </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 13 / 13 </div>
-        <img src="antarctica/ant13.jpg" style="width:100%">
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-<br>
-  
-  <!-- The dots -->
-  <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-        <span class="dot" onclick="currentSlide(8)"></span>
-        <span class="dot" onclick="currentSlide(9)"></span>
-        <span class="dot" onclick="currentSlide(10)"></span>
-        <span class="dot" onclick="currentSlide(11)"></span>
-        <span class="dot" onclick="currentSlide(12)"></span>
-        <span class="dot" onclick="currentSlide(13)"></span>
-        <span class="dot" onclick="currentSlide(14)"></span>
-        <span class="dot" onclick="currentSlide(15)"></span>
-        <span class="dot" onclick="currentSlide(16)"></span>
-        <span class="dot" onclick="currentSlide(17)"></span>
-        <span class="dot" onclick="currentSlide(18)"></span>
-        <span class="dot" onclick="currentSlide(19)"></span>
-        <span class="dot" onclick="currentSlide(20)"></span>
-        <span class="dot" onclick="currentSlide(21)"></span>
-        <span class="dot" onclick="currentSlide(22)"></span>
-        <span class="dot" onclick="currentSlide(23)"></span>
-        <span class="dot" onclick="currentSlide(24)"></span>
-        <span class="dot" onclick="currentSlide(25)"></span>
-        <span class="dot" onclick="currentSlide(26)"></span>
-        <span class="dot" onclick="currentSlide(27)"></span>
-  </div>
-            
     <script type="text/javascript" src="js/scripts-antarctica.js"></script>
 
 </body>
