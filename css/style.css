@@ -723,6 +723,7 @@ canvas {
   transition: 0.4s ease-in;
   outline: none;
   margin-right: 25px;
+  cursor: pointer;
 }
 .topbar_goback:hover {
   border: 1px solid black;
