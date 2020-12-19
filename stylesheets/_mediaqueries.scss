@@ -2,13 +2,15 @@
     .contact-flexbox {flex-flow: column nowrap;}
     .contact-flexbox_bottom {flex-flow: column wrap;}
     .bio-flexbox_toptitle {font-size: 8.1vw;}
+    #antarctica-column {flex: 100% ; max-width: 100% ; padding: 0;}
+    #synesthesia-column {flex: 100%; max-width: 100%; padding: 0;}
 }
 
 @media only screen and (max-width: 1000px) {
     .flexbox-header {display: none;}
     .openspan {display: inline !important;}
     .bio-flexbox {flex-flow: column nowrap;}
-    body {padding-top: 10px;}
+     body {padding-top: 10px;}
     .bio-flexbox_toptitle {font-size: 8.0vw;}
     .bio-flexbox_middleparagraph {font-size: 6vw;}
     .bio-flexbox_bottomskills1coding{font-size: 6vw;}

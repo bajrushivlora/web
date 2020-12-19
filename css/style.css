@@ -274,6 +274,18 @@ canvas {
   .bio-flexbox_toptitle {
     font-size: 8.1vw;
   }
+
+  #antarctica-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #synesthesia-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .flexbox-header {
