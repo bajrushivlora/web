@@ -206,6 +206,10 @@ body {
   text-align: center;
 }
 
+.everythingwork {
+  visibility: hidden;
+}
+
 .headingcontainer {
   position: relative;
   top: 0;
@@ -817,6 +821,114 @@ canvas {
   padding: 0 5px;
 }
 .synesthesia-flexbox_columnimage {
+  width: 100%;
+  margin: 3px;
+  border: 0.2px solid white;
+}
+
+.topbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 50px 50px 30px 50px;
+}
+.topbar_goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid white;
+  background: none;
+  width: 120px;
+  height: 60px;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+  transition: 0.4s ease-in;
+  outline: none;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.topbar_goback:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.topbar_pagetitle {
+  display: flex;
+  margin-left: 25px;
+}
+.topbar_pagetitle-text {
+  font-size: 6vw;
+  font-family: var(--text-font);
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -4px;
+}
+
+.kosovowar {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+}
+
+.kosovowar-menu {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 25px;
+}
+.kosovowar-menu_zoomin, .kosovowar-menu_zoomout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid white;
+  background: none;
+  width: 60px;
+  height: 60px;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+  transition: 0.4s ease-in;
+  outline: none;
+}
+.kosovowar-menu_zoomin:hover, .kosovowar-menu_zoomout:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.kosovowar-menu_zoomout {
+  margin-top: 20px;
+}
+
+.kosovowar-textbox {
+  flex: 1;
+  margin-left: 25px;
+}
+.kosovowar-textbox_text {
+  margin: 0;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 1.8vw;
+  color: white;
+  font-weight: 300;
+}
+
+.kosovowar-flexbox {
+  flex: 1.5;
+  margin: 0px 25px 0px 25px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.kosovowar-flexbox_column {
+  flex: 50%;
+  max-width: 47%;
+  padding: 0 5px;
+}
+.kosovowar-flexbox_columnimage {
   width: 100%;
   margin: 3px;
   border: 0.2px solid white;

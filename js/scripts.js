@@ -1,7 +1,8 @@
 console.log("hey");
 
+
 var everythingWork = document.querySelectorAll('.flexbox-work_text');
-var myAnimationWork = {distance: '150px', duration: 1400};
+var myAnimationWork = {distance: '1500px', duration: 1500};
 
 ScrollReveal().reveal(everythingWork, myAnimationWork);
 
