@@ -290,6 +290,18 @@ canvas {
     max-width: 100%;
     padding: 0;
   }
+
+  #kosovowar-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #conscious-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .flexbox-header {
@@ -929,6 +941,223 @@ canvas {
   padding: 0 5px;
 }
 .kosovowar-flexbox_columnimage {
+  width: 100%;
+  margin: 3px;
+  border: 0.2px solid white;
+}
+
+.topbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 50px 50px 30px 50px;
+}
+.topbar_goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid white;
+  background: none;
+  width: 120px;
+  height: 60px;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+  transition: 0.4s ease-in;
+  outline: none;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.topbar_goback:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.topbar_pagetitle {
+  display: flex;
+  margin-left: 25px;
+}
+.topbar_pagetitle-text {
+  font-size: 6vw;
+  font-family: var(--text-font);
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -4px;
+}
+
+.conscious {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+}
+
+.conscious-menu {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 25px;
+}
+.conscious-menu_zoomin, .conscious-menu_zoomout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid white;
+  background: none;
+  width: 60px;
+  height: 60px;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+  transition: 0.4s ease-in;
+  outline: none;
+}
+.conscious-menu_zoomin:hover, .conscious-menu_zoomout:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.conscious-menu_zoomout {
+  margin-top: 20px;
+}
+
+.conscious-textbox {
+  flex: 1;
+  margin-left: 25px;
+}
+.conscious-textbox_text {
+  margin: 0;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 1.8vw;
+  color: white;
+  font-weight: 300;
+}
+
+.conscious-flexbox {
+  flex: 1.5;
+  margin: 0px 25px 0px 25px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.conscious-flexbox_column {
+  flex: 100%;
+  max-width: 99%;
+  padding: 0 5px;
+}
+.conscious-flexbox_columnimage {
+  width: 100%;
+  margin: 3px;
+  border: 0.2px solid white;
+}
+
+.topbar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 50px 50px 30px 50px;
+}
+.topbar_goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid white;
+  background: none;
+  width: 120px;
+  height: 60px;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+  transition: 0.4s ease-in;
+  outline: none;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.topbar_goback:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.topbar_pagetitle {
+  display: flex;
+  flex-flow: nowrap;
+  margin-left: 25px;
+}
+.topbar_pagetitle-text {
+  font-size: 6vw;
+  font-family: var(--text-font);
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -4px;
+}
+
+.coffee {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+}
+
+.coffee-menu {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: 25px;
+}
+.coffee-menu_zoomin, .coffee-menu_zoomout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid white;
+  background: none;
+  width: 60px;
+  height: 60px;
+  font-size: 3vw;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+  transition: 0.4s ease-in;
+  outline: none;
+}
+.coffee-menu_zoomin:hover, .coffee-menu_zoomout:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+.coffee-menu_zoomout {
+  margin-top: 20px;
+}
+
+.coffee-textbox {
+  flex: 1;
+  margin-left: 25px;
+}
+.coffee-textbox_text {
+  margin: 0;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 1.8vw;
+  color: white;
+  font-weight: 300;
+}
+
+.coffee-flexbox {
+  flex: 1.5;
+  margin: 0px 25px 0px 25px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.coffee-flexbox_column {
+  flex: 50%;
+  max-width: 47%;
+  padding: 0 5px;
+}
+.coffee-flexbox_columnimage {
   width: 100%;
   margin: 3px;
   border: 0.2px solid white;
