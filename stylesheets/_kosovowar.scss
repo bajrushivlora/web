@@ -92,7 +92,7 @@
         margin: 0;
         color: white;
         font-family: var(--text-font);
-        font-size: 1.8vw;
+        font-size: 1.3vw;
         color: white;
         font-weight: 300;
     }
@@ -104,6 +104,30 @@
     display: flex;
     flex-flow: row wrap;
 
+    &_tags {
+        padding: 5px;
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 20px;
+    }
+
+    &_tag-description {
+        margin-right: 1vw;
+        background-color: blue;
+        color: white;
+        border-radius: 20vw;
+        padding: 0.8vw 1.2vw 0.8vw 1.2vw;
+        font-family: var(--text-font);
+        font-size: 1.5vw;
+        font-weight: 400;
+    }
+
+    &_pictures {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
     &_column {
         flex: 50%;
         max-width: 47%;

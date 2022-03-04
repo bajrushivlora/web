@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Grid: App</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tdf3bfw.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tdf3bfw.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body class="mybody">
+  
+    <span class="openspan" onclick="openNav()"> L&#9787;&#9865;K</span>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://www.vlorab.com" class="links">
+            <span class="words">HOME</span>
+        </a>
+        <a href="https://www.vlorab.com/designwork" class="links">
+            <span class="words">MY WORK</span>
+        </a>
+        <a href="https://www.vlorab.com/biography" class="links">
+            <span class="words">BIOGRAPHY</span>
+        </a>
+        <a href="https://www.vlorab.com/contact" class="links">
+            <span class="words">CONTACT</span>
+        </a>
+    </div>
+
+    <div class="flexbox-header">
+        <div class="flexbox-header_1">
+            <a class="flexbox-header_link" href="https://www.vlorab.com">
+                <span class="theheader">
+                    Vlora Bajrushi
+                </span>
+            </a>
+        </div>
+        <div class="flexbox-header_2">
+            <a class="flexbox-header_link" href="https://www.vlorab.com/designwork">
+                <span class="theheader">
+                    my work
+                </span>
+            </a>
+        </div>
+        <div class="flexbox-header_3">
+            <a class="flexbox-header_link" href="https://www.vlorab.com/biography">
+                <span class="theheader">
+                    biography
+                </span>
+            </a>
+        </div>
+        <div class="flexbox-header_4">
+            <a class="flexbox-header_link" href="https://www.vlorab.com/contact">
+                <span class="theheader">
+                    contact
+                </span>
+            </a>
+        </div>
+    </div>   
+
+    <div class="topbar">
+        <div onclick="window.location = 'https://vlorab.com/designwork'" class="topbar_goback">
+            ←
+        </div>
+        <div class="topbar_pagetitle">
+            <p class="topbar_pagetitle-text">
+                Easy Grid App
+            </p>
+        </div>
+    </div>
+
+    <div class="easygrid">
+        <div class="easygrid-menu">
+            <button class="easygrid-menu_zoomin">
+                +
+            </button>
+            <button class="easygrid-menu_zoomout">
+                –
+            </button>
+        </div>
+
+        <div class="easygrid-flexbox">
+            <div class="easygrid-flexbox_tags">
+                <div class="easygrid-flexbox_tag-description">UX / UI</div>
+                <div class="easygrid-flexbox_tag-description">Mobile App Design</div>
+                <div class="easygrid-flexbox_tag-description">Wireframing</div>
+            </div>
+           
+            <div class="easygrid-flexbox_pictures">                
+                    <!-- iphone frames -->
+                    <div class="easygrid-flexbox_column2">
+                        <img class="easygrid-flexbox_column2-01" src="easy grid/easygrid-gif1.gif">
+                        <img class="easygrid-flexbox_column2-02" src="easy grid/easygrid-gif3.gif">
+                        <img class="easygrid-flexbox_column2-03" src="easy grid/easygrid-gif2.gif">
+                    </div>
+
+                    <!-- slideshow -->
+                    <div class="easygrid-flexbox_column1">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-01.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-02.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-03.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-04.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-05.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-06.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-07.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-08.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-09.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-10.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-11.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-12.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-13.png">
+                        <img class="easygrid-flexbox_columnimage" src="easy grid/easygrid-14.png">
+
+                        <div class="w3-center w3-display-bottommiddle" id="bottom-nav" style="width:100%">
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(4)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(5)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(6)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(7)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(8)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(9)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(10)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(11)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(12)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(13)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(14)"></span>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="easygrid-textbox">
+            <p class="easygrid-textbox_text">
+                I teamed up with fellow classmate and designer Nihaarika Arora to create the Easy Grid app. Easy Grid reinforces time management skills while also emphasizing the importance of finding time for leisure. By combining productivity skills with social media interactions, our app help users stay organized, find free time in their schedules for self-care, and discover overlapping free time with friends to do something fun. 
+                <br><br>
+                In the early stages of our research, Nihaarika and I looked at existing time management apps on the market. We found that our competitor apps either prioritized the importance of self-organization, or were more heavily focused on social media interactions. However, we did not find a time management app that successfully married these two factors together. Our goal was to create an app that equally valued personal time for the user, and socialization time for friends and family.
+                <br><br> 
+                We developed task flows for in-app actions, created user profiles, and conducted user testing to gather as much information as we could on our app's performance. We integrated delightful UI animations, established a brand identity through color and hierarchy, and tested the efficiency of our task flows to create our final product. 
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/scripts-easygrid.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>
+
