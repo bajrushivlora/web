@@ -152,6 +152,10 @@ body {
   font-weight: 500;
 }
 
+@font-face {
+  font-family: univers;
+  src: url(UniversLTStd-73-BlackEx.otf);
+}
 .flexbox-work {
   display: flex;
   flex-flow: column nowrap;
@@ -169,11 +173,13 @@ body {
   color: white;
   font-size: 10.3vw;
   text-align: center;
+  font-family: arial;
 }
 .flexbox-work_right {
   display: flex;
   flex-flow: column nowrap;
   flex: 1;
+  margin-top: 50px;
 }
 .flexbox-work_1, .flexbox-work_2, .flexbox-work_3, .flexbox-work_4, .flexbox-work_5, .flexbox-work_6, .flexbox-work_7, .flexbox-work_8, .flexbox-work_9, .flexbox-work_10, .flexbox-work_11, .flexbox-work_12, .flexbox-work_13, .flexbox-work_14, .flexbox-work_15, .flexbox-work_16 {
   flex: 1 0;

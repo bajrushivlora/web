@@ -1,3 +1,9 @@
+@font-face {
+    font-family: univers;
+    src: url(UniversLTStd-73-BlackEx.otf);
+}
+
+
 .flexbox-work {
     display: flex;
     flex-flow: column nowrap;
@@ -5,7 +11,6 @@
     margin: 50px 40px 100px 40px;
     height: 100%;
 
-    //top
     &_left {
         display: flex;
         flex-flow: row wrap;
@@ -17,13 +22,14 @@
         color: white;
         font-size: 10.3vw;
         text-align: center;
+        font-family: arial;
     }
 
-    //bottom
     &_right {
         display: flex;
         flex-flow: column nowrap;
         flex: 1;
+        margin-top: 50px;
     }
 
     &_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8, &_9, &_10, &_11, &_12, &_13, &_14, &_15, &_16 {
